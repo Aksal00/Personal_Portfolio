@@ -33,24 +33,24 @@ const HeroSection = () => {
                     />
                 </span>
                 </h1>
-                <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                    I am a diligent and goal-oriented individual with strong abilities in team working and free thinking. I successfully completed my G.C.E Ordinary Level and Advanced Level Examinations at Nalanda College, Colombo 10, Sri Lanka. Currently, I am pursuing a BSc (Hons) in Computer Science at the University of Sri Jayewardenepura.
+                <p className="text-[#ADB7BE] text-justify sm:text-lg mb-6 lg:mr-14 lg:text-xl">
+                Welcome to my online portfolio! Scroll down to discover more about me.
                 </p>
-                <div>
+                <div >
                     <button className ='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-yellow-600 via-orange-600 to-red-600 hover:bg-slate-200 text-white'>Hire Me</button>
                     <button className ='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-yellow-600 via-orange-600 to-red-600 hover:bg-slate-800 border-white mt-3'>
                         <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
                     </button>
                 </div>
             </div>
-            <div className='col-span=4 place-self-center md:place-self-auto lg:place-self-auto mt-10 lg:mt-4 lg:mx-8'>
-                <div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] relative'>
+            <div className='col-span=4 place-self-center md:place-self-auto lg:place-self-auto mt-20 lg:mt-4 lg:mx-8'>
+                <div className=' rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] xl:w-[500px] xl:h-[500px] relative'>
                     <Image
                         src= "/images/DP1.png"
                         alt = "DP"
-                        className = "absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                        width = {400}
-                        height = {400}
+                        className = "relative transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        width = {520}
+                        height = {600}
                     />
                 </div>
             </div>
