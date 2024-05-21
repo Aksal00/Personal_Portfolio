@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import GithubIcon from "../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import LinkedinIcon from "../../public/linkedin-icon.svg";
+import FacebookIcon from "../../public/facebook-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -32,6 +33,7 @@ const EmailSection = () => {
 
     const response = await fetch(endpoint, options);
     const resData = await response.json();
+    console.log(resData)
 
     if (response.status === 200) {
       console.log("Message sent.");
@@ -44,32 +46,30 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">
+      
+      <div>
+        <h5 className="text-xl font-bold text-white ">
           Let&apos;s Connect
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
+        <p className="text-[#ADB7BE] mb-4 mt-4 max-w-md">
           {" "}
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/Aksal00">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/akila-srikantha-2693b41b9/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
+          <Link href="https://web.facebook.com/profile.php?id=100015022902064">
+            <Image src={FacebookIcon} alt="Facebook Icon" />
           </Link>
         </div>
       </div>
       <div>
-        {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">
-            Email sent successfully!
-          </p>
-        ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <div className="mb-6">
               <label
@@ -117,14 +117,26 @@ const EmailSection = () => {
                 placeholder="Let's talk about..."
               />
             </div>
-            <button
-              type="submit"
-              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
-            >
-              Send Message
-            </button>
+            <div class="group relative mt-5">
+            <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
+              <button
+                type="submit"
+                className =" relative bg-orange-600 hover:bg-yellow-500 text-white font-medium  py-2.5 px-5 rounded-full w-full"
+              >
+                Send Message
+                
+              </button>
+              
+            </div>
+            {
+                emailSubmitted && (
+                  <p className="text-green-500 text-sm mt-2">
+                    Email sent successfully!
+                  </p>
+                )
+              }
           </form>
-        )}
+        
       </div>
     </section>
   );

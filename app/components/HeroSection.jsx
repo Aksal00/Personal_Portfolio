@@ -2,12 +2,14 @@
 import React from 'react'
 import Image from "next/image"
 import { TypeAnimation } from 'react-type-animation';
+import SocialMediaDetails from './SocialMediaDetails';
+import Link from 'next/link';
 
 
 
 const HeroSection = () => {
   return (
-    <section>
+    <section id='home' className='py-20'>
         <div className='grid grid-cols-1 sm:grid-cols-12'>
             <div className="col-span-7 place-self-center text-center sm:text-left">
                 <h1 className='text-white text-2xl lg:text-4xl font-light lg:mb-2'>Hi, I am  </h1>
@@ -37,12 +39,26 @@ const HeroSection = () => {
                 Welcome to my online portfolio! Scroll down to discover more about me.
                 </p>
                 <div >
-                    <button className ='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-yellow-600 via-orange-600 to-red-600 hover:bg-slate-200 text-white'>Hire Me</button>
-                    <button className ='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-yellow-600 via-orange-600 to-red-600 hover:bg-slate-800 border-white mt-3'>
-                        <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
-                    </button>
+                    
+                    <span class="group relative">
+                            
+                        <Link href="#contact">
+                            <div class="absolute px-10 py-4 mr-4 -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
+                            <button  className ='relative px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-orange-600 hover:bg-yellow-500 text-white '>Contact Me</button>
+                        </Link>
+                            
+                    </span>
+                    <span class="group relative">
+                        <div class="absolute px-10 py-4 -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
+                        <button className =' relative px-1 py-1 w-full sm:w-fit rounded-full bg-orange-600 hover:bg-yellow-500 border-white mt-3'>
+                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
+                        </button>
+                    </span>
+                    
                 </div>
+                
             </div>
+            
             <div className='col-span=4 place-self-center md:place-self-auto lg:place-self-auto mt-20 lg:mt-4 lg:mx-8'>
                 <div className=' rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] xl:w-[500px] xl:h-[500px] relative'>
                     <Image

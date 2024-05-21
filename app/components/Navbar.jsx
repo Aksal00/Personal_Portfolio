@@ -7,8 +7,16 @@ import MenuOverlay from "./MenuOverlay"
 
 const NavLinks = [
     {
+        title:"Home",
+        path: "#home"
+    },
+    {
         title:"About",
         path: "#about"
+    },
+    {
+        title: "Skills",
+        path: "#skills",
     },
     {
         title:"Projects",
@@ -17,24 +25,25 @@ const NavLinks = [
     {
         title: "Contact",
         path: "#contact",
-    }
+    },
+    
 ]
 
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'>
-        <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-2'>
+    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90 backdrop-blur'>
+        <div className='flex flex-wrap items-center justify-between mx-auto px-10 py-4'>
             <Link href={"/"} className= "text-xl md:text-3xl text-white font-light">
                 <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600'>A</span>kila <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600'>S</span>rikantha
             </Link>
-            <div className="mobile-menu block md:hidden">
+            <div className="mobile-menu block ">
                 { 
                     !navbarOpen ? (
-                        <button onClick={() => setNavbarOpen(true)} className='flex items-center px-3 py-3 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'><Bars3Icon className='h-5 w-5'/></button>
+                        <button onClick={() => setNavbarOpen(true)} className='flex items-center px-3 py-3 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white md:hidden'><Bars3Icon className='h-5 w-5'/></button>
                     ) : (
-                        <button onClick={() => setNavbarOpen(false)} className='flex items-center px-3 py-3 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'><XMarkIcon className='h-5 w-5'/></button>
+                        <button onClick={() => setNavbarOpen(false)} className='flex items-center px-3 py-3 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white md:hidden'><XMarkIcon className='h-5 w-5'/></button>
                     )
                 }
             </div>
