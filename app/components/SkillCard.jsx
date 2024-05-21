@@ -4,10 +4,10 @@ import Image from "next/image";
 const SkillCard = ({ skillName,imgUrl}) => {
   return (
     <div>
-      <div className="grid justify-center">
+      <div className="grid place-items-center">
         <Image 
             src={imgUrl}
-            className = "mx-3 py-3"
+            className = "  py-3"
             alt={skillName} 
             width= {82}
             height={82}
