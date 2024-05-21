@@ -8,7 +8,7 @@ const SkillCard = ({ skillName,imgUrl}) => {
         <Image 
             src={imgUrl}
             className = "md:translate-x-1/4"
-            alt=" skill image" 
+            alt={skillName} 
             width={72} 
             height={72}
         />
