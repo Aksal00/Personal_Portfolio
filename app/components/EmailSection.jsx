@@ -79,7 +79,7 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-2 xs:justify-center">
           <Link href="https://github.com/Aksal00">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
@@ -92,7 +92,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-          <form className="flex flex-col" onSubmit={sendEmail} id="contact-form">
+          <form ref={form} className="flex flex-col" onSubmit={sendEmail} id="contact-from">
           <div className="mb-6">
               <label
                 htmlFor="firstName"
