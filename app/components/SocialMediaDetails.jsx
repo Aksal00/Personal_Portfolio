@@ -31,14 +31,14 @@ const socialmediaList = [
 const SocialMediaDetails = () => {
   return (
     <section className='mt-10'>
-      <div className='md:border rounded-full md:rounded-full border-opacity-50'>
+      <div className=" md:border rounded-full md:rounded-full border-opacity-50">
       <div>
         <h2 className="text-center text-4xl font-bold  mt-4 mb-4 md:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-500 to-yellow-600 justify-center">
           Let&apos;s Connect
         </h2>
       </div>
       
-      <div className="sm:border-[#33353F] rounded-xl flex flex-row justify-center md:gap-5  mb-4">
+      <div className=" sm:border-[#33353F] rounded-xl flex flex-row justify-center md:gap-5  pb-4">
           
         
           {socialmediaList.map((socialmedia, index) => {  

@@ -1,21 +1,46 @@
+"use client"
 import React from 'react'
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from 'react';
+
+
+
 
 const SocialmediaCard = ({imgUrl,name,link}) => {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
   return (
+    <div
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
     <Link href={link}>
-      <button className=' hover: shadow-gray-200'>
+      
+      <button className=''>
+      {isHovering ? (
         <Image 
                 src={imgUrl}
-                className = ""
+                className =""
+                alt= {name} 
+                width={72} 
+                height={72}
+        />):
+        (
+          <Image 
+                src={imgUrl}
+                className =""
                 alt= {name} 
                 width={72} 
                 height={72}
         />
+        )}
       </button>
+      
         
     </Link>
+    </div>  
   )
 }
 

@@ -44,14 +44,14 @@ const HeroSection = () => {
                             
                         <Link href="#contact">
                             <div class="absolute px-10 py-4 mr-4 -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
-                            <button  className ='relative px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-orange-600 hover:bg-yellow-500 text-white '>Contact Me</button>
+                            <button  className ='relative px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-orange-600 hover:bg-yellow-500 text-white hover:text-black'>Contact Me</button>
                         </Link>
                             
                     </span>
                     <span class="group relative">
                         <div class="absolute px-10 py-4 -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
                         <button className =' relative px-1 py-1 w-full sm:w-fit rounded-full bg-orange-600 hover:bg-yellow-500 border-white mt-3'>
-                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
+                            <span className="block text-white hover:text-yellow-300 bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
                         </button>
                     </span>
                     
@@ -62,6 +62,7 @@ const HeroSection = () => {
             <div className='col-span=4 place-self-center md:place-self-auto lg:place-self-auto mt-20 lg:mt-4 lg:mx-8'>
                 <div className=' rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] xl:w-[500px] xl:h-[500px] relative'>
                     <Image
+                        
                         src= "/images/DP1.png"
                         alt = "DP"
                         className = "relative transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"

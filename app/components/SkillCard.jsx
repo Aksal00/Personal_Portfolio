@@ -7,9 +7,9 @@ const SkillCard = ({ skillName,imgUrl}) => {
       <div className="">
         <Image 
             src={imgUrl}
-            className = "md:translate-x-1/4"
+            className = "translate-x-1/4"
             alt={skillName} 
-            width={82} 
+            width= {82}
             height={82}
         />
         <h5 className="mt-2 text-md lg:text-xl font-semibold mb-2 text-center">{skillName}</h5>

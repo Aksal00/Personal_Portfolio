@@ -12,6 +12,8 @@ const EmailSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
+      firstName:e.target.firstName.value,
+      lastName:e.target.lastName.value,
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value,
@@ -71,6 +73,38 @@ const EmailSection = () => {
       </div>
       <div>
           <form className="flex flex-col" onSubmit={handleSubmit}>
+          <div className="mb-6">
+              <label
+                htmlFor="firstName"
+                className="text-white block mb-2 text-sm font-medium"
+              >
+                First Name
+              </label>
+              <input
+                name="firstName"
+                type="firstName"
+                id="firstName"
+                required
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="Jacob"
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                htmlFor="lastName"
+                className="text-white block mb-2 text-sm font-medium"
+              >
+                Last Name
+              </label>
+              <input
+                name="lastName"
+                type="lastName"
+                id="lastName"
+                required
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="Martin"
+              />
+            </div>
             <div className="mb-6">
               <label
                 htmlFor="email"
@@ -121,7 +155,7 @@ const EmailSection = () => {
             <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
               <button
                 type="submit"
-                className =" relative bg-orange-600 hover:bg-yellow-500 text-white font-medium  py-2.5 px-5 rounded-full w-full"
+                className =" relative bg-orange-600 hover:bg-yellow-500 text-white hover:text-black font-medium  py-2.5 px-5 rounded-full w-full"
               >
                 Send Message
                 
