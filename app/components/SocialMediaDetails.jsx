@@ -43,11 +43,11 @@ const SocialMediaDetails = () => {
         
           {socialmediaList.map((socialmedia, index) => {
             return (
-              
+                
                 <ul className="grid ">
-                      
+                      key={index}
                       <SocialmediaCard
-                          key={index}
+                          
                           imgUrl={socialmedia.image}
                           name={socialmedia.skillName}
                           link= {socialmedia.link}
