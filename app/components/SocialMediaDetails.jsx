@@ -7,21 +7,21 @@ import SocialmediaCard from './SocialmediaCard';
 
 const socialmediaList = [
     {
-        id: "1",
+        id: "0",
         name:"Github",
         image: Github,
         link: "https://github.com/Aksal00"
     },
   
     {
-        id: "2",
+        id: "1",
         name:"Linkedin",
         image:Linkedin ,
         link: "https://www.linkedin.com/in/akila-srikantha-2693b41b9/"
     },
   
     {
-        id: "3",
+        id: "2",
         name:"Facebook",
         image:Facebook,
         link: "https://web.facebook.com/profile.php?id=100015022902064"
@@ -45,9 +45,9 @@ const SocialMediaDetails = () => {
             return (
                 
                 <ul className="grid ">
-                      key={index}
+                      
                       <SocialmediaCard
-                          
+                          key={socialmedia.id}
                           imgUrl={socialmedia.image}
                           name={socialmedia.skillName}
                           link= {socialmedia.link}
