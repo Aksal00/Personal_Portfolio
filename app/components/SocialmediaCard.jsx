@@ -8,7 +8,8 @@ const SocialmediaCard = ({imgUrl,name,link}) => {
       <button className=' hover: shadow-gray-200'>
         <Image 
                 src={imgUrl}
-                className = "" 
+                className = ""
+                alt= {name} 
                 width={72} 
                 height={72}
         />
