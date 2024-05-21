@@ -5,9 +5,11 @@ import LinkedinIcon from "../../public/linkedin-icon.svg";
 import FacebookIcon from "../../public/facebook-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  /*const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -41,6 +43,24 @@ const EmailSection = () => {
       console.log("Message sent.");
       setEmailSubmitted(true);
     }
+    */
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm("service_wfu77m6", "template_lakqdcp", form.current, {
+          publicKey: "kow9aIOae0Ug-IEoJ",
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
   };
 
   return (
@@ -72,7 +92,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-          <form className="flex flex-col" onSubmit={handleSubmit}>
+          <form className="flex flex-col" onSubmit={sendEmail} id="contact-form">
           <div className="mb-6">
               <label
                 htmlFor="firstName"
@@ -123,6 +143,22 @@ const EmailSection = () => {
             </div>
             <div className="mb-6">
               <label
+                htmlFor="contactNumber"
+                className="text-white block mb-2 text-sm font-medium"
+              >
+                Your contact number
+              </label>
+              <input
+                name="contactNumber"
+                type="contactNumber"
+                id="contactNumber"
+                required
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="+94XXXXXXXXX"
+              />
+            </div>
+            <div className="mb-6">
+              <label
                 htmlFor="subject"
                 className="text-white block text-sm mb-2 font-medium"
               >
@@ -162,13 +198,7 @@ const EmailSection = () => {
               </button>
               
             </div>
-            {
-                emailSubmitted && (
-                  <p className="text-green-500 text-sm mt-2">
-                    Email sent successfully!
-                  </p>
-                )
-              }
+            
           </form>
         
       </div>
