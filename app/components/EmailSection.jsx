@@ -70,7 +70,7 @@ const EmailSection = () => {
     >
       
       <div>
-        <h5 className="text-xl font-bold text-white ">
+        <h5 className="text-3xl font-bold text-white ">
           Let&apos;s Connect
         </h5>
         <p className="text-[#ADB7BE] mb-4 mt-4 max-w-md text-justify">
@@ -79,7 +79,7 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2 xs:justify-center">
+        <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/Aksal00">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
