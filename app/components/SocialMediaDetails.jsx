@@ -34,7 +34,7 @@ const SocialMediaDetails = () => {
       <div className='md:border rounded-full md:rounded-full border-opacity-50'>
       <div>
         <h2 className="text-center text-4xl font-bold  mt-4 mb-4 md:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-500 to-yellow-600 justify-center">
-          Let's Connect
+          Let&apos;s Connect
         </h2>
       </div>
       
