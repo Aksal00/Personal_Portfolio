@@ -4,10 +4,10 @@ import Image from "next/image";
 const SkillCard = ({ skillName,imgUrl}) => {
   return (
     <div>
-      <div className="">
+      <div className="justify-center">
         <Image 
             src={imgUrl}
-            className = "translate-x-1/4"
+            className = " translate-x-1/3"
             alt={skillName} 
             width= {82}
             height={82}
