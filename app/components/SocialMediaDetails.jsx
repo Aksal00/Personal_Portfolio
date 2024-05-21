@@ -47,7 +47,7 @@ const SocialMediaDetails = () => {
                 <ul className="grid ">
                       
                       <SocialmediaCard
-                          key={socialmedia.id}
+                          key={index}
                           imgUrl={socialmedia.image}
                           name={socialmedia.skillName}
                           link= {socialmedia.link}
