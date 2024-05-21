@@ -115,7 +115,7 @@ const SkillsSection = () => {
                     Skills
             </h2>   
             <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex-col sm:flex-row items-center justify-between">
-                <ul className="grid grid-cols-3 md:grid-cols-8 gap-10">
+                <ul className="grid grid-cols-2 md:grid-cols-8 gap-10">
                     {skillList.map((skill, index) => (
                         <SkillCard
                             key={skill.id}
