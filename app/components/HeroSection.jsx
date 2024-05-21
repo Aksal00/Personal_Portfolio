@@ -3,6 +3,7 @@ import React from 'react'
 import Image from "next/image"
 import { TypeAnimation } from 'react-type-animation';
 import SocialMediaDetails from './SocialMediaDetails';
+import { motion } from "framer-motion";
 import Link from 'next/link';
 
 
@@ -12,6 +13,12 @@ const HeroSection = () => {
     <section id='home' className='py-20'>
         <div className='grid grid-cols-1 sm:grid-cols-12'>
             <div className="col-span-7 place-self-center text-center sm:text-left">
+                <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+                >
                 <h1 className='text-white text-2xl lg:text-4xl font-light lg:mb-2'>Hi, I am  </h1>
                 <h1 className='mb-3 lg:mb-4 text-5xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600'>Akila Srikantha{" "}</h1> 
                 <h1 className='text-white mb-6 text-2xl lg:text-4xl font-light'>I am a                 
@@ -56,9 +63,14 @@ const HeroSection = () => {
                     </span>
                     
                 </div>
-                
+                </motion.div>
             </div>
-            
+            <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="col-span-4 place-self-center mt-4 lg:mt-0"
+                >
             <div className='col-span=4 place-self-center md:place-self-auto lg:place-self-auto mt-20 lg:mt-4 lg:mx-8'>
                 <div className=' rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] xl:w-[500px] xl:h-[500px] relative'>
                     <Image
@@ -71,6 +83,7 @@ const HeroSection = () => {
                     />
                 </div>
             </div>
+            </motion.div>
         </div>
     
     </section>

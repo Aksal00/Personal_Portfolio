@@ -1,9 +1,11 @@
+"use client"
 import React from 'react'
 import Linkedin from "../../public/linkedin-icon.svg";
 import Facebook from "../../public/facebook-icon.svg";
 import Instagram from "../../public/instagram-icon.svg";
 import Github from "../../public/github-icon.svg";
 import SocialmediaCard from './SocialmediaCard';
+import { motion } from "framer-motion";
 
 const socialmediaList = [
     {
@@ -31,6 +33,12 @@ const socialmediaList = [
 const SocialMediaDetails = () => {
   return (
     <section className='mt-10'>
+      <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="col-span-4 place-self-center mt-4 lg:mt-0"
+      >
       <div className=" md:border rounded-full md:rounded-full border-opacity-50">
       <div>
         <h2 className="text-center text-4xl font-bold  mt-4 mb-4 md:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-500 to-yellow-600 justify-center">
@@ -56,6 +64,7 @@ const SocialMediaDetails = () => {
           
       </div>
       </div>
+      </motion.div>
     </section>
     
   )
