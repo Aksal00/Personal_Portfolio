@@ -41,11 +41,8 @@ const SocialMediaDetails = () => {
       <div className="sm:border-[#33353F] rounded-xl flex flex-row justify-center md:gap-5  mb-4">
           
         
-          {socialmediaList.map((socialmedia, index) => {
-            return (
-                
-                <ul className="grid ">
-                      
+          {socialmediaList.map((socialmedia, index) => {  
+            return (   
                       <SocialmediaCard
                           key={socialmedia.id}
                           imgUrl={socialmedia.image}
@@ -53,8 +50,7 @@ const SocialMediaDetails = () => {
                           link= {socialmedia.link}
 
                       />
-                  </ul>
-                
+                         
             );
           })}
           
