@@ -1,6 +1,7 @@
 import React from "react";
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
+import { CodeBracketIcon, EyeIcon, PlayIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { Content } from "next/font/google";
 
 const ProjectCard = ({ imgUrl, title, description,technology_stack,gitUrl, previewUrl }) => {
   return (
@@ -9,19 +10,24 @@ const ProjectCard = ({ imgUrl, title, description,technology_stack,gitUrl, previ
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover"}}
       >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
+        <div className="overlay items-center justify-center absolutetop-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
           <Link
             href={gitUrl}
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            className="h-14 w-14 mr-8 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
           >
             <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
           </Link>
+          
           <Link
             href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            className="relative  bg-orange-400 border-2 rounded-full hover:bg-yellow-400 border-[black] hover:border-yellow-400 group/link"
           >
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+            <div className="px-3 flex flex-row content-center ">
+            <h1 className="my-2 font-bold text-xl relative rounded-full text-black">WATCH NOW</h1>
+            <PlayIcon className="relative fill-black h-10 w-10 text-orange-400   transform translate-x-1 translate-y-0.5  cursor-pointer group-hover/link:text-black" />
+            </div>
           </Link>
+          
         </div>
       </div>
       <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
