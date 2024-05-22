@@ -2,6 +2,7 @@ import React from "react";
 import { CodeBracketIcon, EyeIcon, PlayIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { Content } from "next/font/google";
+import { motion } from "framer-motion";
 
 const ProjectCard = ({ imgUrl, title, description,technology_stack,gitUrl, previewUrl }) => {
   return (
@@ -10,7 +11,9 @@ const ProjectCard = ({ imgUrl, title, description,technology_stack,gitUrl, previ
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover"}}
       >
+        
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-1000 ">
+        
           <Link
             href={gitUrl}
             className="h-14 w-14 mr-8 border-2 hover:border-4 relative rounded-full border-[#ADB7BE] hover:border-yellow-400 group/link"
@@ -29,6 +32,7 @@ const ProjectCard = ({ imgUrl, title, description,technology_stack,gitUrl, previ
           </Link>
           
         </div>
+        
       </div>
       <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
