@@ -71,8 +71,8 @@ const HeroSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    visible: { x:0,opacity: 1, scale: 1},
-                    hidden: { x:500, opacity: 0, scale: 1 }
+                    visible: { opacity: 1, scale: 1},
+                    hidden: { opacity: 0, scale: 0.5 }
                 }}
                 >
             <div className='col-span=4 place-self-center md:place-self-auto lg:place-self-auto mt-20 lg:mt-4 lg:mx-8'>
