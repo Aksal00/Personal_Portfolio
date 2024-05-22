@@ -39,8 +39,8 @@ const SocialMediaDetails = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 variants={{
-                  visible: { x:0,opacity: 1, scale: 1},
-                  hidden: { x:-200, opacity: 0, scale: 1 }
+                  visible: { opacity: 1, scale: 1},
+                  hidden: { opacity: 0, scale: 1 }
                 }}
               
                 className="col-span-4 place-self-center mt-4 lg:mt-0"

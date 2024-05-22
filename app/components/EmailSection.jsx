@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const EmailSection = () => {
   
@@ -34,7 +35,16 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
-      
+      <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                    visible: {opacity: 1, scale: 1},
+                    hidden: {opacity: 0, scale: 0 }
+                }}
+                >
       <div>
         <h5 className="text-3xl font-bold text-white ">
           Let&apos;s Connect
@@ -57,6 +67,17 @@ const EmailSection = () => {
           </Link>
         </div>
       </div>
+      </motion.div>
+      <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                    visible: {opacity: 1, scale: 1},
+                    hidden: {opacity: 0, scale: 0 }
+                }}
+      >
       <div>
           <form ref={form} className="flex flex-col" onSubmit={sendEmail} id="contact-from">
           <div className="mb-6">
@@ -168,6 +189,7 @@ const EmailSection = () => {
           </form>
         
       </div>
+      </motion.div>
     </section>
   );
 };

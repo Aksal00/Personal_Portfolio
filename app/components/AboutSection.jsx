@@ -38,19 +38,19 @@ const AboutSection = () => {
     }
   return (
     <section id="about" className='text-white py-0'>
-        <div className=' md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+        <div className=' md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-0 sm:py-16 xl:px-16'>
             <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    visible: { x:0,opacity: 1, scale: 1},
-                    hidden: { x:-500, opacity: 0, scale: 1 }
+                    visible: {opacity: 1, scale: 1},
+                    hidden: {opacity: 0, scale: 0 }
                 }}
                 >
             <div className='mt-20'>
-                <Image src="/images/DP2.png"  className="" width={300} height={300} alt='about section image'/>
+                <Image src="/images/DP2.png"  className="" width={350} height={350} alt='about section image'/>
             </div> 
             </motion.div>
             <motion.div
@@ -59,8 +59,8 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    visible: { x:0,opacity: 1, scale: 1},
-                    hidden: { x:500, opacity: 0, scale: 1 }
+                    visible: {opacity: 1, scale: 1},
+                    hidden: { opacity: 0, scale: 0 }
                 }}
                 >
             <div className='mt-4 md:mt-10 text-justify flex flex-col '>

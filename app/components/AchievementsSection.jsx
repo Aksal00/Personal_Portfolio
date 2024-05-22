@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import dynamic from "next/dynamic";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView,useState } from "framer-motion";
 
 const AnimatedNumbers = dynamic(
   () => {
@@ -30,17 +30,21 @@ const achievementsList = [
   },
 ];
 
+
+
+
 const AchievementsSection = () => {
   return (
 
     <motion.div
       initial="hidden"
       whileInView="visible"
+      
       viewport={{ once: true }}
       transition={{ duration: 1 }}
       variants={{
-        visible: { x:0,opacity: 1, scale: 1},
-        hidden: { x:-500, opacity: 0, scale: 1 }
+        visible: { opacity: 1, scale: 1},
+        hidden: { opacity: 0, scale: 1 }
       }}
     >
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
