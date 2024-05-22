@@ -9,9 +9,18 @@ const TAB_DATA = [
         title: "Education",
         id: "education",
         content: (
-            <ul>
-                <li>Nalanda College</li>
-                <li>University of Sri Jayewardenepura</li>
+            <ul className=' list-disc'>
+                <li><b>Nalanda College - Colombo 10</b></li>
+                <ul>
+                    <li className='pl-2'>G.C.E Ordinary Level - 2016</li>
+                    <li className='pl-2'>G.C.E Advanced Level( Combined Maths, Physics, Chemistry) - 2019</li>
+                </ul>
+                <br></br>
+                <li><b>University of Sri Jayewardenepura</b></li>
+                <ul>
+                    <li className='pl-2'>B.Sc. (Honours) in Computer Science(2021- Present)</li>
+                </ul>
+
             </ul>
         )
     },
@@ -19,9 +28,12 @@ const TAB_DATA = [
         title: "Experience",
         id: "experience",
         content: (
-            <ul>
-                <li>Rotaract Club</li>
-                <li>Computer Science Association</li>
+            <ul className=' list-disc'>
+                <li><b>Director of Public Relations - Rotaract Club of University of Sri Jayewardenepura( RI Year 22-23 )</b></li>
+                <br></br>
+                <li><b>Committee Member - Computer Science Association University of Sri jayewardenepura</b></li>
+                <br></br>
+                <li><b>Freelance Video Editor & Graphic Designer at Fiverr(2019 - Present)</b></li>
             </ul>
         )
     }
@@ -45,8 +57,8 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    visible: {opacity: 1, scale: 1},
-                    hidden: {opacity: 0, scale: 0 }
+                    visible: {x:0, opacity: 1, scale: 1},
+                    hidden: {x:50,opacity: 0, scale: 0.5 }
                 }}
                 >
             <div className='mt-20'>
@@ -59,16 +71,16 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    visible: {opacity: 1, scale: 1},
-                    hidden: { opacity: 0, scale: 0 }
+                    visible:{x:0,opacity: 1, scale: 1},
+                    hidden: { x:-300,opacity: 0, scale: 0.5 }
                 }}
                 >
             <div className='mt-4 md:mt-10 text-justify flex flex-col '>
                 <h2 className='text-4xl font-bold text-white mb-4 '>About Me</h2>
                 <p className='text-base lg:text-lg'>
-                I am a diligent and goal-oriented individual with strong abilities in team working and free thinking. I successfully completed my G.C.E Ordinary Level and Advanced Level Examinations at Nalanda College, Colombo 10, Sri Lanka. Currently, I am pursuing a BSc (Hons) in Computer Science at the University of Sri Jayewardenepura.
+                I am a diligent and goal-oriented individual with strong abilities in team working and free thinking. I successfully completed my G.C.E Ordinary Level and Advanced Level Examinations at Nalanda College, Colombo 10, Sri Lanka. Currently, I am pursuing B.Sc. (Honours) in Computer Science degree at the University of Sri Jayewardenepura.
                 </p>
-                <div className='flex flex-row mt-8'>
+                <div className='flex flex-row gap-8 mt-8'>
                     <TabButton 
                         selectTab={() => handleTabChange("education")} 
                         active={tab === "education"}>

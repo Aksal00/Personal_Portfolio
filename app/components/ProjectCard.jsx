@@ -23,11 +23,11 @@ const ProjectCard = ({ imgUrl, title, description,technology_stack,gitUrl, previ
           
           <Link
             href={previewUrl}
-            className="relative  bg-orange-400 border-2 rounded-full hover:bg-yellow-400 border-[black] hover:border-yellow-400 group/link"
+            className="relative bg-opacity-80  border-2 rounded-full  hover:bg-opacity-70 border-[#ADB7BE] hover:border-yellow-400 group/link"
           >
             <div className="px-3 flex flex-row content-center ">
-            <h1 className="my-2 font-bold text-xl relative rounded-full text-black">WATCH NOW</h1>
-            <PlayIcon className="relative fill-black h-10 w-10 text-orange-400   transform translate-x-1 translate-y-0.5  cursor-pointer group-hover/link:text-black" />
+            <h1 className="my-2 font-bold text-xl relative rounded-full text-[white] group-hover/link:text-yellow-400">WATCH NOW</h1>
+            <PlayIcon className="relative fill-white group-hover/link:fill-yellow-400 h-10 w-10  text-opacity-30   transform translate-x-1 translate-y-0.5  cursor-pointer group-hover/link:text-yellow-400" />
             </div>
           </Link>
           
