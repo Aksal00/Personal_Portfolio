@@ -66,10 +66,14 @@ const HeroSection = () => {
                 </motion.div>
             </div>
             <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="col-span-4 place-self-center mt-4 lg:mt-0"
+                variants={{
+                    visible: { x:0,opacity: 1, scale: 1},
+                    hidden: { x:500, opacity: 0, scale: 1 }
+                }}
                 >
             <div className='col-span=4 place-self-center md:place-self-auto lg:place-self-auto mt-20 lg:mt-4 lg:mx-8'>
                 <div className=' rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] xl:w-[500px] xl:h-[500px] relative'>

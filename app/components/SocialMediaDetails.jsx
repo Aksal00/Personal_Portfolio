@@ -34,9 +34,15 @@ const SocialMediaDetails = () => {
   return (
     <section className='mt-10'>
       <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                variants={{
+                  visible: { x:0,opacity: 1, scale: 1},
+                  hidden: { x:-200, opacity: 0, scale: 1 }
+                }}
+              
                 className="col-span-4 place-self-center mt-4 lg:mt-0"
       >
       <div className=" md:border rounded-full md:rounded-full border-opacity-50">

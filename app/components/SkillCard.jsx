@@ -7,10 +7,14 @@ const SkillCard = ({ skillName,imgUrl}) => {
   return (
     <div>
       <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className=""
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.3 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 }
+          }}
         >
       <div className="grid place-items-center">
         <Image 

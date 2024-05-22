@@ -2,6 +2,7 @@
 import React, {useTransition, useState} from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton'
+import { motion, useInView } from "framer-motion";
 
 const TAB_DATA = [
     {
@@ -38,9 +39,30 @@ const AboutSection = () => {
   return (
     <section id="about" className='text-white py-0'>
         <div className=' md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                    visible: { x:0,opacity: 1, scale: 1},
+                    hidden: { x:-500, opacity: 0, scale: 1 }
+                }}
+                >
             <div className='mt-20'>
-                <Image src="/images/DP2.png"  className="" width={400} height={400} alt='about section image'/>
+                <Image src="/images/DP2.png"  className="" width={300} height={300} alt='about section image'/>
             </div> 
+            </motion.div>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                    visible: { x:0,opacity: 1, scale: 1},
+                    hidden: { x:500, opacity: 0, scale: 1 }
+                }}
+                >
             <div className='mt-4 md:mt-10 text-justify flex flex-col '>
                 <h2 className='text-4xl font-bold text-white mb-4 '>About Me</h2>
                 <p className='text-base lg:text-lg'>
@@ -62,8 +84,10 @@ const AboutSection = () => {
                     </div>
                     <div className ="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
                 </div>
-            
+
+            </motion.div>
         </div>
+        
     </section>
     
   )
