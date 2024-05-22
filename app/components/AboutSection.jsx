@@ -29,12 +29,48 @@ const TAB_DATA = [
         id: "experience",
         content: (
             <ul className=' list-disc'>
-                <li><b>Director of Public Relations - Rotaract Club of University of Sri Jayewardenepura( RI Year 22-23 )</b></li>
+                <li><b>Director of Public Relations Committee- Rotaract Club of University of Sri Jayewardenepura( RI Year 22-23 )</b></li>
                 <br></br>
                 <li><b>Committee Member - Computer Science Association University of Sri jayewardenepura</b></li>
                 <br></br>
                 <li><b>Freelance Video Editor & Graphic Designer at Fiverr(2019 - Present)</b></li>
             </ul>
+        )
+    },
+
+    {
+        title: "Extracurricular Activities ",
+        id: "extracurricular activities",
+        content: (
+            <div className='md:grid md:grid-cols-2'>
+            <ul className=' list-disc'>
+                <li ><b>Rotaract Club of University of Sri Jayewardenepura</b></li>
+                <ul className='pt-3'>
+                    <li className='pl-2'><b>Project</b> - Design Warrior 3.0</li>
+                    <li className='pl-2 pb-1'><b>Position</b> - Chairperson</li>
+                    <a className='pl-2  text-orange-400 underline' href="/certificates/DW_racusj.pdf" download="DW_racusj">Download Certificate</a>
+                </ul>
+                <ul className='pt-3'>
+                    <li className='pl-2'><b>Project</b> - Be Professionally Equipped 4.0</li>
+                    <li className='pl-2 pb-1'><b>Position</b> - Public Relations Team Leader</li>
+                    <a className='pl-2 text-orange-400 underline' href="/certificates/BPE_racusj.pdf" download="BPE_racusj">Download Certificate</a>
+                </ul>
+                <ul className='pt-3'>
+                    <li className='pl-2'><b>Project</b> - Rise Up Sri Lanka 2.0</li>
+                    <li className='pl-2 pb-1'><b>Position</b> - Public Relations Team Member</li>
+                    <a className='pl-2 text-orange-400 underline' href="/certificates/RUS_racusj.pdf" download="RUS_racusj">Download Certificate</a>
+                </ul>
+                <br></br>
+                <li><b>Computer Science Association University of Sri jayewardenepura</b></li>
+                <ul className='pt-3'>
+                    <li className='pl-2'><b>Project</b> - CSA Project Pulse</li>
+                    <li className='pl-2 pb-1'><b>Position</b> - Chairperson</li>
+                    
+                </ul>
+                <br></br>
+                
+            </ul>
+            </div>
         )
     }
 ]
@@ -61,7 +97,7 @@ const AboutSection = () => {
                     hidden: {x:50,opacity: 0, scale: 0.5 }
                 }}
                 >
-            <div className='mt-20'>
+            <div className=' mt-20'>
                 <Image src="/images/DP2.png"  className="" width={350} height={350} alt='about section image'/>
             </div> 
             </motion.div>
@@ -92,7 +128,13 @@ const AboutSection = () => {
                         active={tab === "experience"}>
                             {" "}
                             Experience{" "}
-                    </TabButton>                   
+                    </TabButton>
+                    <TabButton 
+                        selectTab={() => handleTabChange("extracurricular activities")} 
+                        active={tab === "extracurricular activities"}>
+                            {" "}
+                            Extracurricular Activities{" "}
+                    </TabButton>                      
                     </div>
                     <div className ="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
                 </div>
