@@ -12,8 +12,8 @@ const projectsData = [
     technology_stack:"NextJs, Framer Motion, Tailwind CSS",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/Aksal00/Vidumaga---Interactive-Learning-Application-HCI",
-    previewUrl: "https://github.com/Aksal00/Vidumaga---Interactive-Learning-Application-HCI",
+    gitUrl: "https://github.com/Aksal00/Personal_Portfolio",
+    previewUrl: "https://github.com/Aksal00/Personal_Portfolio",
   },
   {
     id: 2,
@@ -22,8 +22,8 @@ const projectsData = [
     technology_stack:"Unity Game Engine, C#, OpenCV",
     image: "/images/projects/2.png",
     tag: ["All", "PC"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Aksal00/Vidumaga---Interactive-Learning-Application-HCI",
+    previewUrl: "https://youtu.be/_kvDbPpiYow",
   },
   {
     id: 3,
@@ -32,8 +32,8 @@ const projectsData = [
     technology_stack:"Python, PyGame",
     image: "/images/projects/3.png",
     tag: ["All", "PC"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Aksal00/Ilangam-Hatana----Multiplayer-Combat-Game",
+    previewUrl: "https://youtu.be/wcm59UrER3I",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const projectsData = [
     technology_stack:"React Native, Expo",
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Aksal00/WeeCare---Women-Children-Safety-App",
     previewUrl: "/",
   },
   {
@@ -103,7 +103,7 @@ const ProjectsSection = () => {
           isSelected={tag === "PC"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
