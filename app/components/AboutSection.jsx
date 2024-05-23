@@ -63,7 +63,7 @@ const TAB_DATA = [
                     </ul>
                     <br></br>
                     <p>
-                    In the Rotary International year 2022-2023, I was appointed as the <b>Director of the Public Relations Committee</b> of the Rotaract Club of the University of Sri Jayewardenepura. During that year, two projects were carried out under our committee, and Project "Someone's Daughter Vol-05" won the <b>bronze award for the most outstanding public image initiative</b> of 2022-23 in Rotaract District 3230 (Sri Lanka - Maldives). 
+                    In the Rotary International year 2022-2023, I was appointed as the <b>Director of the Public Relations Committee</b> of the Rotaract Club of the University of Sri Jayewardenepura. During that year, two projects were carried out under our committee, and Project &quot;Someone's Daughter Vol-05&quot; won the <b>bronze award for the most outstanding public image initiative</b> of 2022-23 in Rotaract District 3230 (Sri Lanka - Maldives). 
                     </p>
                     <br></br>
                     <li><b>Computer Science Association University of Sri jayewardenepura</b></li>
