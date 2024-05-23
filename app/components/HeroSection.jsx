@@ -14,15 +14,16 @@ const HeroSection = () => {
         <div className='grid grid-cols-1 sm:grid-cols-12'>
             <div className="col-span-7 place-self-center text-center sm:text-left">
                 <motion.div
-                initial={{ x:50,opacity: 0}}
+                initial={{ x:-50,opacity: 0}}
                 animate={{ x:0,opacity: 1}}
+                viewport={{ once: false }}
                 transition={{ duration: 0.5 }}
-                className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+                className=""
                 >
                 <h1 className='text-white text-2xl lg:text-4xl font-light lg:mb-2'>Hi, I am  </h1>
                 <h1 className='mb-3 lg:mb-4 text-5xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600'>Akila Srikantha{" "}</h1> 
                 <h1 className='text-white mb-6 text-2xl lg:text-4xl font-light'>I am a                 
-                <span className='text-white mb-6 text-2xl lg:text-4xl font-bold'>
+                <span className='text-white mb-6 text-xl md:text-2xl lg:text-4xl font-bold'>
                 <TypeAnimation
                     sequence={[
                         ' Web Developer.',
@@ -42,7 +43,7 @@ const HeroSection = () => {
                     />
                 </span>
                 </h1>
-                <p className="text-[#ADB7BE] text-justify sm:text-lg mb-6 lg:mr-14 lg:text-xl">
+                <p className="text-[#d1d1d1] text-justify sm:text-lg mb-6 lg:mr-14 lg:text-xl">
                 Welcome to my online portfolio! Scroll down to discover more about me.
                 </p>
                 <div >
@@ -68,11 +69,11 @@ const HeroSection = () => {
             <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    visible: { opacity: 1, scale: 1},
-                    hidden: { opacity: 0, scale: 0.5 }
+                    visible: { x:0,opacity: 1, scale: 1},
+                    hidden: { x:50,opacity: 0, scale: 1 }
                 }}
                 >
             <div className='flex xs:flex-col sm:flex-col md:flex-none lg:flex-none xl:flex-none justify-center col-span=4 lg:place-self-auto mt-20 lg:mt-4 lg:mx-8'>

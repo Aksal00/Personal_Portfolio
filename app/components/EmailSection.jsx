@@ -8,9 +8,34 @@ import Image from "next/image";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const EmailSection = () => {
-  
+
+  const notify_success = () => toast.success('🦄 Email send successfully!', {
+    position: "bottom-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    transition: Bounce,
+});
+const notify_error = () => toast.error('🦄 Email did not send!', {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    transition: Bounce,
+});
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -21,31 +46,32 @@ const EmailSection = () => {
           publicKey: "kow9aIOae0Ug-IEoJ",
         })
         .then(
-          () => {
-            console.log('SUCCESS!');
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
+          () => {notify_success},
+          (error) => {notify_error},
         );
   };
 
+  
+
   return (
+    
     <section
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
+      
       <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    visible: {opacity: 1, scale: 1},
-                    hidden: {opacity: 0, scale: 0.5 }
+                    visible: {x:0,opacity: 1, scale: 1},
+                    hidden: {x:-50,opacity: 0, scale: 1 }
                 }}
                 >
       <div>
+      <ToastContainer />
         <h5 className="text-3xl font-bold text-white ">
           Let&apos;s Connect
         </h5>
@@ -71,14 +97,15 @@ const EmailSection = () => {
       <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    visible: {opacity: 1, scale: 1},
-                    hidden: {opacity: 0, scale: 0.5 }
+                    visible: {x:0,opacity: 1, scale: 1},
+                    hidden: {x:50,opacity: 0, scale: 1 }
                 }}
       >
       <div>
+          
           <form ref={form} className="flex flex-col" onSubmit={sendEmail} id="contact-from">
           <div className="mb-6">
               <label
@@ -187,10 +214,12 @@ const EmailSection = () => {
             </div>
             
           </form>
-        
+          
       </div>
       </motion.div>
+      
     </section>
+   
   );
 };
 

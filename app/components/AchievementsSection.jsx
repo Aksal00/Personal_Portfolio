@@ -40,11 +40,11 @@ const AchievementsSection = () => {
       initial="hidden"
       whileInView="visible"
       
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       transition={{ duration: 1 }}
       variants={{
-        visible: { opacity: 1, scale: 1},
-        hidden: { opacity: 0, scale: 1 }
+        visible: { x:0,opacity: 1, scale: 1},
+        hidden: { x:-50,opacity: 0, scale: 1 }
       }}
     >
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
