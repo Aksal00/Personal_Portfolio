@@ -103,8 +103,8 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    visible: {x:0, opacity: 1, scale: 1},
-                    hidden: {x:50,opacity: 0, scale: 0.5 }
+                    visible: {opacity: 1, scale: 1},
+                    hidden: {opacity: 0, scale: 0.5 }
                 }}
                 >
             <div className=' mt-20'>
@@ -117,8 +117,8 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    visible:{x:0,opacity: 1, scale: 1},
-                    hidden: { x:-300,opacity: 0, scale: 0.5 }
+                    visible:{opacity: 1, scale: 1},
+                    hidden: {opacity: 0, scale: 0.5 }
                 }}
                 >
             <div className='mt-4 md:mt-10 text-justify flex flex-col '>
