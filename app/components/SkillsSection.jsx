@@ -10,98 +10,98 @@ const skillList = [
     {
         id: "1",
         skillName:"HTML",
-        image: "/images/skills/html.svg"
+        image: "/images/skills/html.png"
     },
   
     {
         id: "2",
         skillName:"CSS",
-        image: "/images/skills/css.svg"
+        image: "/images/skills/css.png"
     },
   
     {
         id: "3",
         skillName:"Javascript",
-        image:HTMLIcon
+        image:"/images/skills/javascript.png"
     },
 
     {
         id: "4",
         skillName:"Python",
-        image:HTMLIcon
+        image:"/images/skills/python.png"
     },
 
     {
         id: "5",
         skillName:"C",
-        image:HTMLIcon
+        image:"/images/skills/c.png"
     },
 
     {
         id: "6",
         skillName:"C#",
-        image:HTMLIcon
+        image:"/images/skills/csharp.png"
     },
 
     {
         id: "7",
         skillName:"Java",
-        image:HTMLIcon
+        image:"/images/skills/java.png"
     },
     {
         id: "8",
         skillName:"Php",
-        image:HTMLIcon
+        image:"/images/skills/php.png"
     },
     {
         id: "9",
         skillName:"mySQL",
-        image:HTMLIcon
+        image:"/images/skills/mysql.png"
     },
     {
         id: "10",
         skillName:"MongoDB",
-        image:HTMLIcon
+        image:"/images/skills/mongodb.png"
     },
     {
         id: "11",
         skillName:"React",
-        image:HTMLIcon
+        image:"/images/skills/react.png"
     },
     {
         id: "12",
         skillName:"Next.js",
-        image:HTMLIcon
+        image:"/images/skills/nextjs.png"
     },
     {
         id: "13",
         skillName:"Node.js",
-        image:HTMLIcon
+        image:"/images/skills/nodejs.png"
     },
     {
         id: "14",
         skillName:"Unity",
-        image:HTMLIcon
+        image:"/images/skills/unity.png"
     },
     {
         id: "15",
         skillName:"Figma",
-        image:HTMLIcon
+        image:"/images/skills/figma.png"
     },
     {
         id: "16",
         skillName:"Photoshop",
-        image:HTMLIcon
+        image:"/images/skills/ps.png"
     },
     {
         id: "17",
         skillName:"Premiere Pro",
-        image:HTMLIcon
+        image:"/images/skills/pr.png"
     },
     {
         id: "18",
         skillName:"After Effects",
-        image:HTMLIcon
+        image:"/images/skills/ae.png"
     },
     
 

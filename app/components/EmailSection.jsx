@@ -74,8 +74,8 @@ const EmailSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    visible: {x:0,opacity: 1, scale: 1},
-                    hidden: {x:-300,opacity: 0, scale: 0.5 }
+                    visible: {opacity: 1, scale: 1},
+                    hidden: {opacity: 0, scale: 0.5 }
                 }}
       >
       <div>
