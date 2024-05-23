@@ -42,34 +42,44 @@ const TAB_DATA = [
         title: "Extracurricular Activities ",
         id: "extracurricular activities",
         content: (
-            <div className='md:grid md:grid-cols-2'>
-            <ul className=' list-disc'>
-                <li ><b>Rotaract Club of University of Sri Jayewardenepura</b></li>
-                <ul className='pt-3'>
-                    <li className='pl-2'><b>Project</b> - Design Warrior 3.0</li>
-                    <li className='pl-2 pb-1'><b>Position</b> - Chairperson</li>
-                    <a className='pl-2  text-orange-400 underline' href="/certificates/DW_racusj.pdf" download="DW_racusj">Download Certificate</a>
-                </ul>
-                <ul className='pt-3'>
-                    <li className='pl-2'><b>Project</b> - Be Professionally Equipped 4.0</li>
-                    <li className='pl-2 pb-1'><b>Position</b> - Public Relations Team Leader</li>
-                    <a className='pl-2 text-orange-400 underline' href="/certificates/BPE_racusj.pdf" download="BPE_racusj">Download Certificate</a>
-                </ul>
-                <ul className='pt-3'>
-                    <li className='pl-2'><b>Project</b> - Rise Up Sri Lanka 2.0</li>
-                    <li className='pl-2 pb-1'><b>Position</b> - Public Relations Team Member</li>
-                    <a className='pl-2 text-orange-400 underline' href="/certificates/RUS_racusj.pdf" download="RUS_racusj">Download Certificate</a>
-                </ul>
-                <br></br>
-                <li><b>Computer Science Association University of Sri jayewardenepura</b></li>
-                <ul className='pt-3'>
-                    <li className='pl-2'><b>Project</b> - CSA Project Pulse</li>
-                    <li className='pl-2 pb-1'><b>Position</b> - Chairperson</li>
+            <div className='md:grid md:grid-cols-3'>
+            <div className='col-span-2'>
+                <ul className=' list-disc'>
+                    <li ><b>Rotaract Club of University of Sri Jayewardenepura</b></li>
+                    <ul className='pt-3'>
+                        <li className='pl-2'><b>Project</b> - Design Warrior 3.0</li>
+                        <li className='pl-2 pb-1'><b>Position</b> - Chairperson</li>
+                        <a className='pl-2  text-orange-400 underline' href="/certificates/DW_racusj.pdf" download="DW_racusj">Download Certificate</a>
+                    </ul>
+                    <ul className='pt-3'>
+                        <li className='pl-2'><b>Project</b> - Be Professionally Equipped 4.0</li>
+                        <li className='pl-2 pb-1'><b>Position</b> - Public Relations Team Leader</li>
+                        <a className='pl-2 text-orange-400 underline' href="/certificates/BPE_racusj.pdf" download="BPE_racusj">Download Certificate</a>
+                    </ul>
+                    <ul className='pt-3'>
+                        <li className='pl-2'><b>Project</b> - Rise Up Sri Lanka 2.0</li>
+                        <li className='pl-2 pb-1'><b>Position</b> - Public Relations Team Member</li>
+                        <a className='pl-2 text-orange-400 underline' href="/certificates/RUS_racusj.pdf" download="RUS_racusj">Download Certificate</a>
+                    </ul>
+                    <br></br>
+                    <p>
+                    In the Rotary International year 2022-2023, I was appointed as the <b>Director of the Public Relations Committee</b> of the Rotaract Club of the University of Sri Jayewardenepura. During that year, two projects were carried out under our committee, and Project Someone's Daughter Vol-05 won the bronze award for the most outstanding public image initiative of 2022-23 in Rotaract District 3230 (Sri Lanka - Maldives). 
+                    </p>
+                    <br></br>
+                    <li><b>Computer Science Association University of Sri jayewardenepura</b></li>
+                    <ul className='pt-3'>
+                        <li className='pl-2'><b>Project</b> - CSA Project Pulse</li>
+                        <li className='pl-2 pb-1'><b>Position</b> - Chairperson</li>
+                        
+                    </ul>
+                    <br></br>
                     
                 </ul>
-                <br></br>
-                
-            </ul>
+            </div>
+            <div>
+                <Image src="/images/extra/1.jpg"  className="ml-10 border border-orange-500 " width={250} height={350} alt='extra 1'/>
+                <Image src="/images/extra/2.jpg"  className="ml-10 border border-orange-500 " width={250} height={350} alt='extra 1'/>
+            </div>
             </div>
         )
     }
