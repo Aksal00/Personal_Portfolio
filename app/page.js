@@ -13,9 +13,8 @@ import SocialMediaDetails from "./components/SocialMediaDetails";
 export default function Home() {
   return (
     <main className="flex flex-col bg-[#121212]">
-      
-      <Navbar/>
       <span className="container mt-24 mx-auto px-12 py-4">
+        <Navbar/>
         <HeroSection/>
         <SocialMediaDetails/>
         <AboutSection/>
