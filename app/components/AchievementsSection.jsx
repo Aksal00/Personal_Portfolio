@@ -49,15 +49,15 @@ const AchievementsSection = () => {
     >
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         
-      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
-      <h2 className="text-center text-4xl font-bold  mt-4 mb-4 md:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-500 to-yellow-600">
+      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col md:flex-row items-center justify-between">
+      <h2 className="text-center text-3xl md:text-4xl font-bold  mt-4 mb-4 md:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-500 to-yellow-600">
         As a Freelance Video Editor
       </h2>
         {achievementsList.map((achievement, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
+              className="flex flex-col items-center justify-center mx-4 my-4"
             >
               <h2 className="text-white text-4xl font-bold flex flex-row">
                 {achievement.prefix}

@@ -10,8 +10,8 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <section id='home' className='py-20'>
-        <div className='grid grid-cols-1 sm:grid-cols-12'>
+    <section id='home'>
+        <div className='py-20 grid grid-cols-1 sm:grid-cols-12'>
             <div className="col-span-7 place-self-center text-center sm:text-left">
                 <motion.div
                 initial={{ x:-50,opacity: 0}}
