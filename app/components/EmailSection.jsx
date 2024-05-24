@@ -74,7 +74,7 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 mt-4 max-w-md text-justify">
           {" "}
-          I&apos;m on the hunt for fresh opportunities and my inbox is eagerly awaiting your messages. Whether you have a question or simply want to drop a friendly hello, I'm here and ready to connect. I promise to do my utmost to respond to each and every one of you!
+          I&apos;m on the hunt for fresh opportunities and my inbox is eagerly awaiting your messages. Whether you have a question or simply want to drop a friendly hello, I&apos;m here and ready to connect. I promise to do my utmost to respond to each and every one of you!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/Aksal00">
