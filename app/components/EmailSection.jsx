@@ -10,31 +10,10 @@ import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import App from "next/app";
 
 const EmailSection = () => {
 
-  const notify_success = () => toast.success('🦄 Email send successfully!', {
-    position: "bottom-center",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "colored",
-    transition: Bounce,
-});
-const notify_error = () => toast.error('🦄 Email did not send!', {
-    position: "top-center",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "colored",
-    transition: Bounce,
-});
 
     const form = useRef();
 
@@ -46,8 +25,31 @@ const notify_error = () => toast.error('🦄 Email did not send!', {
           publicKey: "kow9aIOae0Ug-IEoJ",
         })
         .then(
-          () => {notify_success},
-          (error) => {notify_error},
+          () => {toast.success('🦄 Email send successfully!', {
+              position: "top-center",
+              autoClose: false,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: false,
+              draggable: true,
+              progress: undefined,
+              closeButton: true ,
+              theme: "colored",
+              transition: "Bounce",
+        });
+            form.current.reset();
+          },
+          (error) => {toast.error('🦄 Error!', {
+              position: "top-center",
+              autoClose: false,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: false,
+              draggable: false,
+              progress: undefined,
+              theme: "colored",
+              transition: "Bounce",
+            });},
         );
   };
 
@@ -71,7 +73,7 @@ const notify_error = () => toast.error('🦄 Email did not send!', {
                 }}
                 >
       <div>
-      <ToastContainer />
+      <ToastContainer/>    
         <h5 className="text-3xl font-bold text-white ">
           Let&apos;s Connect
         </h5>
@@ -107,6 +109,7 @@ const notify_error = () => toast.error('🦄 Email did not send!', {
       <div>
           
           <form ref={form} className="flex flex-col" onSubmit={sendEmail} id="contact-from">
+          
           <div className="mb-6">
               <label
                 htmlFor="firstName"
@@ -203,6 +206,7 @@ const notify_error = () => toast.error('🦄 Email did not send!', {
             </div>
             <div class="group relative mt-5">
             <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
+            
               <button
                 type="submit"
                 className =" relative bg-orange-600 hover:bg-yellow-500 text-white hover:text-black font-medium  py-2.5 px-5 rounded-full w-full"
@@ -216,6 +220,7 @@ const notify_error = () => toast.error('🦄 Email did not send!', {
           </form>
           
       </div>
+      
       </motion.div>
       
     </section>
