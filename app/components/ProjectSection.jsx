@@ -105,7 +105,7 @@ const ProjectsSection = () => {
       </div>
       <ul ref={ref} className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
-          <motion.li
+          <motion.div
             key={index}
             variants={cardVariants}
             initial="initial"
@@ -122,7 +122,7 @@ const ProjectsSection = () => {
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
             />
-          </motion.li>
+          </motion.div>
         ))}
       </ul>
     </section>

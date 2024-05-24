@@ -87,17 +87,17 @@ const TAB_DATA = [
                     <ul className='pt-3'>
                         <li className='pl-2'><b>Project</b> - Design Warrior 3.0</li>
                         <li className='pl-2 pb-1'><b>Position</b> - Chairperson</li>
-                        <a className='pl-2  text-orange-400 underline' href="/certificates/DW_racusj.pdf" download="DW_racusj">Download Certificate</a>
+                        <a className='pl-2  text-orange-400 hover:text-yellow-400' href="/certificates/DW_racusj.pdf" download="DW_racusj"><button className='underline'>Download Certificate</button></a>
                     </ul>
                     <ul className='pt-3'>
                         <li className='pl-2'><b>Project</b> - Be Professionally Equipped 4.0</li>
                         <li className='pl-2 pb-1'><b>Position</b> - Public Relations Team Leader</li>
-                        <a className='pl-2 text-orange-400 underline' href="/certificates/BPE_racusj.pdf" download="BPE_racusj">Download Certificate</a>
+                        <a className='pl-2 text-orange-400 hover:text-yellow-400' href="/certificates/BPE_racusj.pdf" download="BPE_racusj"><button className='underline'>Download Certificate</button></a>
                     </ul>
                     <ul className='pt-3'>
                         <li className='pl-2'><b>Project</b> - Rise Up Sri Lanka 2.0</li>
                         <li className='pl-2 pb-1'><b>Position</b> - Public Relations Team Member</li>
-                        <a className='pl-2 text-orange-400 underline' href="/certificates/RUS_racusj.pdf" download="RUS_racusj">Download Certificate</a>
+                        <a className='pl-2 text-orange-400 hover:text-yellow-400' href="/certificates/RUS_racusj.pdf" download="RUS_racusj"><button className='underline'>Download Certificate</button></a>
                     </ul>
                     <br></br>
                     <p>
