@@ -17,41 +17,6 @@ const EmailSection = () => {
 
 
     const form = useRef();
-    /*
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs
-        .sendForm("service_wfu77m6", "template_lakqdcp", form.current, {
-          publicKey: "kow9aIOae0Ug-IEoJ",
-        })
-        .then(
-          () => {toast.success('🦄 Email send successfully!', {
-              position: "top-center",
-              autoClose: false,
-              hideProgressBar: false,
-              closeOnClick: false,
-              pauseOnHover: false,
-              draggable: true,
-              progress: undefined,
-              closeButton: true ,
-              theme: "colored",
-              transition: "Bounce",
-        });
-            form.current.reset();
-          },
-          (error) => {toast.error('🦄 Error!', {
-              position: "top-center",
-              autoClose: false,
-              hideProgressBar: false,
-              closeOnClick: false,
-              pauseOnHover: false,
-              draggable: false,
-              progress: undefined,
-              theme: "colored",
-              transition: "Bounce",
-            });},
-        );*/
 
         const sendEmail = (e) => {
           e.preventDefault();
@@ -109,9 +74,7 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 mt-4 max-w-md text-justify">
           {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+          I&apos;m on the hunt for fresh opportunities and my inbox is eagerly awaiting your messages. Whether you have a question or simply want to drop a friendly hello, I'm here and ready to connect. I promise to do my utmost to respond to each and every one of you!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/Aksal00">

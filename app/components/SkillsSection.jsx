@@ -5,6 +5,7 @@ import HTMLIcon from "../../public/linkedin-icon.svg";
 import LinkedinIcon from "../../public/linkedin-icon.svg";
 import Image from "next/image"
 import { TypeAnimation } from 'react-type-animation';
+import { motion,easeIn } from "framer-motion";
 
 const skillList = [
     {
@@ -108,26 +109,28 @@ const skillList = [
   ];
 
 const SkillsSection = () => {
-    return (  
-    <section id="skills" className="py-8">
-        <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"> 
-            <h2 className="text-center text-4xl font-bold  mt-4 mb-4 md:mb-4 text-transparent text-white">
-                    Skills
-            </h2>   
-            <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-8">
-                <ul className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-10">
-                    {skillList.map((skill, index) => (
-                        <SkillCard
-                            key={skill.id}
-                            imgUrl={skill.image}
-                            skillName={skill.skillName}
-                        
-                        />
-                    ))}
-                </ul>
+    return (
+    
+        <section id="skills" className="py-8">
+            <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"> 
+                <h2 className="text-center text-4xl font-bold  mt-4 mb-4 md:mb-4 text-transparent text-white">
+                        Skills
+                </h2>   
+                <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-8">
+                    <ul className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-10">
+                        {skillList.map((skill, index) => (
+                            <SkillCard
+                                key={skill.id}
+                                imgUrl={skill.image}
+                                skillName={skill.skillName}
+                            
+                            />
+                        ))}
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
 
     )
 }
