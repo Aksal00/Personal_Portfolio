@@ -8,15 +8,16 @@ import Image from "next/image";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import App from "next/app";
+//import { ToastContainer, toast } from 'react-toastify';
+//import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2'
+
 
 const EmailSection = () => {
 
 
     const form = useRef();
-
+    /*
     const sendEmail = (e) => {
       e.preventDefault();
   
@@ -50,7 +51,36 @@ const EmailSection = () => {
               theme: "colored",
               transition: "Bounce",
             });},
-        );
+        );*/
+
+        const sendEmail = (e) => {
+          e.preventDefault();
+      
+          emailjs
+            .sendForm("service_wfu77m6", "template_lakqdcp", form.current, {
+              publicKey: "kow9aIOae0Ug-IEoJ",
+            })
+            .then(
+              () => {Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Thank you!",
+                text: "Your message has delivered successfully.",
+                showConfirmButton: false,
+                timer: 3500
+              });
+                form.current.reset();
+              },
+              (error) => {Swal.fire({
+                position: "center",
+                icon: "error",
+                title: "Sorry...",
+                text: "Something went wrong!",
+                timer: 3500
+              });
+            },
+            );
+
   };
 
   
@@ -73,7 +103,7 @@ const EmailSection = () => {
                 }}
                 >
       <div>
-      <ToastContainer/>    
+        
         <h5 className="text-3xl font-bold text-white ">
           Let&apos;s Connect
         </h5>
@@ -199,7 +229,9 @@ const EmailSection = () => {
               </label>
               <textarea
                 name="message"
+                type="text"
                 id="message"
+                required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 placeholder="Let's talk about..."
               />
