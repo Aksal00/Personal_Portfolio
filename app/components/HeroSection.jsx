@@ -79,7 +79,7 @@ const HeroSection = () => {
                 }}
                 >
             <div className='flex xs:flex-col sm:flex-col md:flex-none lg:flex-none xl:flex-none justify-center col-span=4 lg:place-self-auto mt-20 lg:mt-4 lg:mx-8'>
-                <div className=' rounded-full  bg-[#181818] w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] xl:w-[500px] xl:h-[500px]'>
+                <div className=' rounded-full  bg-[#181818] w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] xl:w-[500px] xl:h-[500px] shadow-xl shadow-blur shadow-orange-400'>
                     <Image
                         
                         src= "/images/DP1.png"

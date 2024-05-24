@@ -115,13 +115,13 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/Aksal00">
-            <Image src={GithubIcon} alt="Github Icon" />
+            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src={GithubIcon} alt="Github Icon" />
           </Link>
           <Link href="https://www.linkedin.com/in/akila-srikantha-2693b41b9/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
           <Link href="https://web.facebook.com/profile.php?id=100015022902064">
-            <Image src={FacebookIcon} alt="Facebook Icon" />
+            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src={FacebookIcon} alt="Facebook Icon" />
           </Link>
         </div>
       </div>

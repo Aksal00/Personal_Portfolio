@@ -163,11 +163,11 @@ const AboutSection = () => {
                 }}
                 >
             <div className='flex mt-20'>
-                <Image src="/images/DP2.png"  className="" width={450} height={450} alt='about section image'/>
+                <Image src="/images/DP2.png"  className="rounded-full shadow-xl shadow-blur shadow-orange-400" width={450} height={450} alt='about section image'/>
             </div> 
             </motion.div>
             
-            <div className='mt-4 md:mt-10 text-justify flex flex-col '>
+            <div className='mt-10 md:mt-10 text-justify flex flex-col '>
                 <h2 className='text-center md:text-left text-4xl font-bold text-white mb-4 '>About Me</h2>
                 <motion.div
                 initial="hidden"

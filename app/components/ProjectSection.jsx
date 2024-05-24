@@ -48,7 +48,7 @@ const projectsData = [
   {
     id: 5,
     title: "Omi Warriors - Mobile Game",
-    description: "Omi Warriors is a mobile game inspired by the Sri Lankan card game called 'Omi'.",
+    description: "Omi Warriors is a mobile game inspired by the Sri Lankan card game 'Omi'.",
     technology_stack:"Unity Game Engine, C#",
     image: "/images/projects/5.png",
     tag: ["All", "Mobile"],

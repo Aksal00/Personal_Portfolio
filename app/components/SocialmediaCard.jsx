@@ -22,7 +22,7 @@ const SocialmediaCard = ({imgUrl,name,link}) => {
       {isHovering ? (
         <Image 
                 src={imgUrl}
-                className =""
+                className ="border-4 rounded-full shadow-lg shadow-blur shadow-orange-400"
                 alt= {name} 
                 width={72} 
                 height={72}
