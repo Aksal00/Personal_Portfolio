@@ -115,7 +115,7 @@ const TAB_DATA = [
                 </ul>
                 </motion.div>
             </div>
-            <div className='sm:ml-0 md:ml-10  place-content-center place-items-center justify-center mx-10 md:mx-0'>
+            <div className='sm:ml-0 md:ml-10 place-content-center place-items-center justify-center mx-10 md:mx-0'>
             <motion.div
                         initial="hidden"
                         whileInView="visible"

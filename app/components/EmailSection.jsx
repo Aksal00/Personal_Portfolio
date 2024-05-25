@@ -52,7 +52,7 @@ const EmailSection = () => {
     
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-0 relative"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-8 sm:gap-20 lg:gap-60 relative"
     >
       
       <motion.div
@@ -67,14 +67,14 @@ const EmailSection = () => {
                 >
       <div>
         
-        <h5 className="text-3xl font-bold text-white ">
+        <h5 className="text-3xl font-bold text-white text-center md:text-left">
           Let&apos;s Connect
         </h5>
-        <p className="text-[#ADB7BE] mb-4 mt-4 max-w-md text-justify">
+        <p className="text-[#ADB7BE] mb-4 mt-4 text-justify justify-center">
           {" "}
           I&apos;m on the hunt for fresh opportunities and my inbox is eagerly awaiting your messages. Whether you have a question or simply want to drop a friendly hello, I&apos;m here and ready to connect. I promise to do my utmost to respond to each and every one of you!
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-2 mb-10 justify-center md:justify-start">
           <Link href="https://github.com/Aksal00">
             <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src={GithubIcon} alt="Github Icon" />
           </Link>
