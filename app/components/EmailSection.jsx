@@ -52,7 +52,7 @@ const EmailSection = () => {
     
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-0 relative"
     >
       
       <motion.div
@@ -198,11 +198,11 @@ const EmailSection = () => {
               />
             </div>
             <div class="group relative mt-5">
-            <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
+            
             
               <button
                 type="submit"
-                className =" relative bg-orange-600 hover:bg-yellow-500 text-white hover:text-black font-medium  py-2.5 px-5 rounded-full w-full"
+                className ="hover:shadow-lg hover:shadow-blur hover:shadow-orange-500 relative bg-orange-600 hover:bg-yellow-400 text-white hover:text-black font-medium  py-2.5 rounded-full w-full"
               >
                 Send Message
                 

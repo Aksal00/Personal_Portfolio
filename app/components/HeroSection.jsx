@@ -43,7 +43,7 @@ const HeroSection = () => {
                     />
                 </span>
                 </h1>
-                <p className="text-[#d1d1d1] text-justify sm:text-lg mb-6 lg:mr-14 lg:text-xl">
+                <p className="text-[#d1d1d1] text-justify sm:text-md mb-6 sm:mr-8 lg:mr-14 lg:text-xl">
                 Welcome to my online portfolio! Scroll down to discover more about me.
                 </p>
                 <div >
@@ -51,14 +51,12 @@ const HeroSection = () => {
                     <span class="group relative">
                             
                         <Link href="#contact">
-                            <div class="absolute px-0 py-4 mr-4 -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
-                            <button  className ='relative px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-orange-600 hover:bg-yellow-500 text-white hover:text-black'>Contact Me</button>
+                            <button  className ='hover:shadow-lg hover:shadow-blur hover:shadow-orange-500 relative px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-orange-600 hover:bg-yellow-500 text-white hover:text-black'>Contact Me</button>
                         </Link>
                             
                     </span>
                     <span class="group relative">
-                        <div class="absolute px-0 py-4 -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
-                        <button  className =' relative  px-1 py-1 w-full sm:w-fit rounded-full bg-orange-600 hover:bg-yellow-500 border-white mt-3'>
+                        <button  className ='hover:shadow-lg hover:shadow-blur hover:shadow-orange-500 relative  px-1 py-1 w-full sm:w-fit rounded-full bg-orange-600 hover:bg-yellow-500 border-white mt-3'>
                             <a href="/cv/Akila.pdf" download="Akila">
                             <span className="block text-white hover:text-yellow-300 bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 ">Download CV</span>
                             </a>

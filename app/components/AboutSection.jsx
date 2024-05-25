@@ -162,12 +162,12 @@ const AboutSection = () => {
                     hidden: {x:-50,opacity: 0, scale: 1 }
                 }}
                 >
-            <div className='flex mt-20'>
-                <Image src="/images/DP2.png"  className="border-5  rounded-full  shadow-xl shadow-blur shadow-orange-400" width={450} height={450} alt='about section image'/>
+            <div className='flex mt-20 justify-center'>
+                <Image src="/images/DP2.png"  className="border-5  rounded-full shadow-xl shadow-blur shadow-orange-400" width={450} height={450} alt='about section image'/>
             </div> 
             </motion.div>
             
-            <div className='mt-10 md:mt-10 text-justify flex flex-col '>
+            <div className='mt-10 md:mt-10 text-justify'>
                 <h2 className='text-center md:text-left text-4xl font-bold text-white mb-4 '>About Me</h2>
                 <motion.div
                 initial="hidden"
@@ -179,11 +179,11 @@ const AboutSection = () => {
                     hidden: {x:50,opacity: 0, scale: 1}
                 }}
                 >
-                <p className='text-base text-md lg:text-lg text-[#d1d1d1]'>
+                <p className='text-md lg:text-lg text-[#d1d1d1]'>
                 I am a diligent and goal-oriented individual with strong abilities in team working and free thinking. I successfully completed my G.C.E Ordinary Level and Advanced Level Examinations at Nalanda College, Colombo 10, Sri Lanka. Currently, I am pursuing B.Sc. (Honours) in Computer Science degree at the University of Sri Jayewardenepura.
                 </p></motion.div>
-                <div className='relative flex flex-row gap-0 sm:gap-1 md:gap-2 lg:gap-4 xl:gap-8 mt-8 justify-center items-center mx-1'>
-                    <span className='ml-4'>
+                <div className='relative flex flex-wrap md:flex-row gap-0 sm:gap-1 md:gap-2 lg:gap-4 xl:gap-4 mt-8  justify-center'>
+                    
                     <motion.div
                                     initial="hidden"
                                     whileInView="visible"
@@ -201,7 +201,7 @@ const AboutSection = () => {
                                 {" "}
                                 Education{" "}
                         </TabButton></motion.div>
-                    </span>
+                    
                     <motion.div
                                     initial="hidden"
                                     whileInView="visible"
@@ -218,7 +218,7 @@ const AboutSection = () => {
                             {" "}
                             Experience{" "}
                     </TabButton></motion.div>
-                    <span className='mr-4'>
+                    
                     <motion.div
                                     initial="hidden"
                                     whileInView="visible"
@@ -236,7 +236,7 @@ const AboutSection = () => {
                                 {" "}
                                 Extracurricular Activities{" "}
                         </TabButton></motion.div>
-                    </span>                      
+                                         
                     </div>
                     
                     <div className ="mt-8"><motion.div
