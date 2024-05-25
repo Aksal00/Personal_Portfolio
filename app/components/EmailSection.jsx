@@ -8,8 +8,6 @@ import Image from "next/image";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-//import { ToastContainer, toast } from 'react-toastify';
-//import 'react-toastify/dist/ReactToastify.css';
 import Swal from 'sweetalert2'
 
 

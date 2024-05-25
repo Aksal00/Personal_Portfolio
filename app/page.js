@@ -12,7 +12,7 @@ import SocialMediaDetails from "./components/SocialMediaDetails";
 
 export default function Home() {
   return (
-    <main className="flex flex-col bg-[#121212] w-fit px-12">
+    <main className="flex flex-col bg-[#121212] w-full px-12">
       <Navbar/>
       <span className="container mt-24 mx-auto  py-4">
         <HeroSection/>
