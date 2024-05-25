@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import GithubIcon from "../../public/github-icon.png";
 import LinkedinIcon from "../../public/linkedin-icon.png";
 import FacebookIcon from "../../public/facebook-icon.png";
-import Link from "next/link";
-import Image from "next/image";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
