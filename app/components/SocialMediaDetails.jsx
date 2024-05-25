@@ -1,8 +1,5 @@
 "use client"
 import React from 'react'
-import Linkedin from "../../public/linkedin-icon.png";
-import Facebook from "../../public/facebook-icon.png";
-import Github from "../../public/github-icon.png";
 import SocialmediaCard from './SocialmediaCard';
 import { motion } from "framer-motion";
 
@@ -10,21 +7,21 @@ const socialmediaList = [
     {
         id: "0",
         name:"Github",
-        image: Github,
+        image: "/github-icon.png",
         link: "https://github.com/Aksal00"
     },
   
     {
         id: "1",
         name:"Linkedin",
-        image:Linkedin ,
+        image:"/linkedin-icon.png",
         link: "https://www.linkedin.com/in/akila-srikantha-2693b41b9/"
     },
   
     {
         id: "2",
         name:"Facebook",
-        image:Facebook,
+        image:"/facebook-icon.png",
         link: "https://web.facebook.com/profile.php?id=100015022902064"
     },
 ]
