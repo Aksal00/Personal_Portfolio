@@ -13,7 +13,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Aksal00/Personal_Portfolio",
-    previewUrl: "https://github.com/Aksal00/Personal_Portfolio",
+    previewUrl: "https://akila-srikantha.netlify.app/",
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ const projectsData = [
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/Aksal00/WeeCare---Women-Children-Safety-App",
-    previewUrl: "/",
+    previewUrl: "https://youtu.be/ljRn2XPc88o",
   },
   {
     id: 5,
@@ -52,8 +52,8 @@ const projectsData = [
     technology_stack:"Unity Game Engine, C#",
     image: "/images/projects/5.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Aksal00/Omi-Warriors",
+    previewUrl: "https://github.com/Aksal00/Omi-Warriors",
   },
   
 ];
