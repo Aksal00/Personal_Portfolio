@@ -2,9 +2,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import GithubIcon from "../../public/github-icon.png";
-import LinkedinIcon from "../../public/linkedin-icon.png";
-import FacebookIcon from "../../public/facebook-icon.png";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
@@ -76,13 +73,13 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2 mb-10 justify-center md:justify-start">
           <Link href="https://github.com/Aksal00">
-            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src={GithubIcon} alt="Github Icon" />
+            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/github-icon.png" alt="Github Icon" width={70} height={70}/>
           </Link>
           <Link href="https://www.linkedin.com/in/akila-srikantha-2693b41b9/">
-            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src={LinkedinIcon} alt="Linkedin Icon" />
+            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/linkedin-icon.png" alt="Linkedin Icon" width={70} height={70}/>
           </Link>
           <Link href="https://web.facebook.com/profile.php?id=100015022902064">
-            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src={FacebookIcon} alt="Facebook Icon" />
+            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/facebook-icon.png"alt="Facebook Icon" width={70} height={70}/>
           </Link>
         </div>
       </div>
