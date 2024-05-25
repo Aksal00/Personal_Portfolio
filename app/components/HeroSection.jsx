@@ -57,7 +57,7 @@ const HeroSection = () => {
                     </span>
                     <span class="group relative">
                         <button  className ='hover:shadow-lg hover:shadow-blur hover:shadow-orange-500 relative  px-1 py-1 w-full sm:w-fit rounded-full bg-orange-600 hover:bg-yellow-500 border-white mt-3'>
-                            <a href="/cv/Akila.pdf" download="Akila">
+                            <a href="/cv/Akila_Srikantha_CV.pdf" download="Akila_Srikantha_CV">
                             <span className="block text-white hover:text-yellow-300 bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 ">Download CV</span>
                             </a>
                         </button>
