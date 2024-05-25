@@ -1,8 +1,6 @@
 "use client";
 import React from 'react'
 import SkillCard from './SkillCard';
-import HTMLIcon from "../../public/linkedin-icon.svg";
-import LinkedinIcon from "../../public/linkedin-icon.svg";
 import Image from "next/image"
 import { TypeAnimation } from 'react-type-animation';
 import { motion,easeIn } from "framer-motion";
