@@ -12,9 +12,9 @@ import SocialMediaDetails from "./components/SocialMediaDetails";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212]">
+    <main className="flex flex-col bg-[#121212] w-fit px-12">
       <Navbar/>
-      <span className="container mt-24 mx-auto px-0 py-4">
+      <span className="container mt-24 mx-auto  py-4">
         <HeroSection/>
         <SocialMediaDetails/>
         <AboutSection/>

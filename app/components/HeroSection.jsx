@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <section id='home'>
+    <section id='home' className=''>
         <div className='py-20 grid grid-cols-1 sm:grid-cols-12'>
             <div className="col-span-7 place-self-center text-center sm:text-left">
                 <motion.div
@@ -51,13 +51,13 @@ const HeroSection = () => {
                     <span class="group relative">
                             
                         <Link href="#contact">
-                            <div class="absolute px-10 py-4 mr-4 -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
+                            <div class="absolute px-0 py-4 mr-4 -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
                             <button  className ='relative px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-orange-600 hover:bg-yellow-500 text-white hover:text-black'>Contact Me</button>
                         </Link>
                             
                     </span>
                     <span class="group relative">
-                        <div class="absolute px-10 py-4 -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
+                        <div class="absolute px-0 py-4 -inset-1 rounded-full bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 opacity-0 blur transition duration-200 group-hover:opacity-90"></div>
                         <button  className =' relative  px-1 py-1 w-full sm:w-fit rounded-full bg-orange-600 hover:bg-yellow-500 border-white mt-3'>
                             <a href="/cv/Akila.pdf" download="Akila">
                             <span className="block text-white hover:text-yellow-300 bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 ">Download CV</span>
