@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import GithubIcon from "../../public/github-icon.svg";
-import LinkedinIcon from "../../public/linkedin-icon.svg";
-import FacebookIcon from "../../public/facebook-icon.svg";
+import GithubIcon from "../../public/github-icon.png";
+import LinkedinIcon from "../../public/linkedin-icon.png";
+import FacebookIcon from "../../public/facebook-icon.png";
 import Link from "next/link";
 import Image from "next/image";
 import { useRef } from "react";

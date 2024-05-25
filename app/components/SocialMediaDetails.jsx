@@ -1,9 +1,8 @@
 "use client"
 import React from 'react'
-import Linkedin from "../../public/linkedin-icon.svg";
-import Facebook from "../../public/facebook-icon.svg";
-import Instagram from "../../public/instagram-icon.svg";
-import Github from "../../public/github-icon.svg";
+import Linkedin from "../../public/linkedin-icon.png";
+import Facebook from "../../public/facebook-icon.png";
+import Github from "../../public/github-icon.png";
 import SocialmediaCard from './SocialmediaCard';
 import { motion } from "framer-motion";
 
