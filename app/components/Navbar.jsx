@@ -59,9 +59,9 @@ const Navbar = () => {
             <div className="mobile-menu block ">
                 { 
                     !navbarOpen ? (
-                        <button onClick={() => setNavbarOpen(true)} className='flex items-center px-3 py-3 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white md:hidden'><Bars3Icon className='h-5 w-5'/></button>
+                        <button onClick={() => setNavbarOpen(true)} className='flex items-center px-3 py-3 border rounded-xl border-slate-200 text-slate-200 hover:text-yellow-500 hover:border-yellow-500 md:hidden'><Bars3Icon className='h-5 w-5'/></button>
                     ) : (
-                        <button onClick={() => setNavbarOpen(false)} className='flex items-center px-3 py-3 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white md:hidden'><XMarkIcon className='h-5 w-5'/></button>
+                        <button onClick={() => setNavbarOpen(false)} className='flex items-center px-3 py-3 border rounded-xl border-slate-200 text-slate-200 hover:text-yellow-500 hover:border-yellow-500 md:hidden'><XMarkIcon className='h-5 w-5'/></button>
                     )
                 }
             </div>
