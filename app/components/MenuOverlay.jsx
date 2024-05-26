@@ -6,7 +6,7 @@ import Image
 const MenuOverlay = ({ links }) => {
   return (
     
-        <ul className='flex flex-col py-4 items-center md:hidden  bg-opacity-80 bg-blur bg-black-80'>
+        <ul className='flex flex-col py-4 items-center md:hidden  bg-opacity-80 bg-blur bg-black-80 shadow-lg  shadow-blur transition-shadow shadow-orange-800'>
             {links.map((link,index) =>( 
                 <li key={index}>
                     <NavLink href={link.path} title ={link.title}/>
