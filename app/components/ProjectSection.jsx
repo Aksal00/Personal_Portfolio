@@ -43,7 +43,7 @@ const projectsData = [
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/Aksal00/WeeCare---Women-Children-Safety-App",
-    previewUrl: "https://youtu.be/ljRn2XPc88o",
+    previewUrl: "https://youtu.be/ljRn2XPc88o?si=uW5ruqMJHPVkOjDp",
   },
   {
     id: 5,
