@@ -45,7 +45,7 @@ const HeroSection = () => {
                     />
                 </span>
                 </h1>
-                <p className="text-[#d1d1d1] text-justify sm:text-md mb-6 sm:mr-8 lg:mr-14 lg:text-xl">
+                <p className="text-[#d1d1d1] text-center sm:text-left sm:text-md mb-6 sm:mr-8 lg:mr-14 lg:text-xl">
                 Welcome to my online portfolio! Scroll down to discover more about me.
                 </p>
                 <div >
