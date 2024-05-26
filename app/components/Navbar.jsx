@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react'
+import Image from "next/image";
 import Link from 'next/link'
 import NavLink from './NavLink'
 import {Bars3Icon,XMarkIcon} from "@heroicons/react/24/solid"
@@ -35,9 +36,26 @@ const Navbar = () => {
   return (
     <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90 backdrop-blur'>
         <div className='flex flex-wrap items-center justify-between mx-auto px-5 md:px-14 py-4'>
-            <Link href={"/"} className= "text-xl md:text-3xl text-white font-light">
-                <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600'>A</span>kila <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600'>S</span>rikantha
-            </Link>
+        <Link href={"/"} className="flex items-center text-xl md:text-3xl text-white font-light">
+            <Image 
+                className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' 
+                src="/logo_icons/icon_A.png" 
+                alt="Portfolio Icon" 
+                width={35} 
+                height={35} 
+            />
+            <span className='ml-0'>kila&nbsp;</span>
+            
+            <Image 
+                className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' 
+                src="/logo_icons/icon_S.png" 
+                alt="Portfolio Icon" 
+                width={35} 
+                height={35} 
+            />
+            
+            <span>rikantha</span>
+        </Link>
             <div className="mobile-menu block ">
                 { 
                     !navbarOpen ? (

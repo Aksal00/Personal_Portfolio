@@ -180,7 +180,7 @@ const AboutSection = () => {
                 }}
                 >
                 <p className='text-md lg:text-lg text-[#d1d1d1]'>
-                I am a diligent and goal-oriented individual with strong abilities in team working and free thinking. I successfully completed my G.C.E Ordinary Level and Advanced Level Examinations at Nalanda College, Colombo 10, Sri Lanka. Currently, I am pursuing B.Sc. (Honours) in Computer Science degree at the University of Sri Jayewardenepura.
+                I am a diligent and goal-oriented individual with strong abilities in teamwork and independent thinking. I successfully completed my G.C.E. Ordinary Level and Advanced Level Examinations at Nalanda College, Colombo 10, Sri Lanka. Currently, I am pursuing a B.Sc. (Honours) degree in Computer Science at the University of Sri Jayewardenepura.
                 </p></motion.div>
                 <div className='relative flex flex-wrap md:flex-row gap-0 sm:gap-1 md:gap-2 lg:gap-4 xl:gap-4 mt-8  justify-center'>
                     
