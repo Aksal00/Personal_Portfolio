@@ -3,8 +3,22 @@ import { CodeBracketIcon, EyeIcon, PlayIcon } from "@heroicons/react/24/outline"
 import Link from "next/link";
 import { Content } from "next/font/google";
 import { motion } from "framer-motion";
+import Swal from 'sweetalert2'
+
+  
 
 const ProjectCard = ({ imgUrl, title, description,technology_stack,gitUrl, previewUrl }) => {
+  const handleClick = (e) => {
+    if (!previewUrl) {
+      e.preventDefault();
+        Swal.fire({
+        title: 'Sorry!',
+        text: 'Project details will be updated soon.',
+        icon: 'info',
+        confirmButtonText: 'OK',
+        confirmButtonColor: "#f97316",
+      });
+    }}
   return (
     <div>
       <div
@@ -13,15 +27,26 @@ const ProjectCard = ({ imgUrl, title, description,technology_stack,gitUrl, previ
       >
         
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-1000 ">
-            
-          <Link
+        {previewUrl ? (  
+          <a
             href={gitUrl}
             className="h-14 w-14 mr-2 md:mr-6 border-2 hover:border-4 relative rounded-full border-[#ADB7BE] hover:border-yellow-400 group/link"
           >
             <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-yellow-400" />
-          </Link>
-          
-          <Link
+          </a>):(
+          <a
+          onClick={handleClick}
+            href={"#"}
+            className="h-14 w-14 mr-2 md:mr-6 border-2 hover:border-4 relative rounded-full border-[#ADB7BE] hover:border-yellow-400 group/link"
+          >
+            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-yellow-400" />
+          </a>
+
+          )}
+
+
+          {previewUrl ? (
+          <a
             href={previewUrl}
             className="relative bg-opacity-80  border-2 rounded-full  hover:bg-opacity-70 border-[#ADB7BE] hover:border-yellow-400 group/link"
           >
@@ -29,7 +54,19 @@ const ProjectCard = ({ imgUrl, title, description,technology_stack,gitUrl, previ
             <h1 className="my-2 font-bold text-xl relative rounded-full text-[white] group-hover/link:text-yellow-400">WATCH NOW</h1>
             <PlayIcon className="relative fill-white group-hover/link:fill-yellow-400 h-10 w-10  text-opacity-30   transform translate-x-1 translate-y-0.5  cursor-pointer group-hover/link:text-yellow-400" />
             </div>
-          </Link>
+          </a>):(
+            <a
+            onClick={handleClick}
+            href={"#"}
+            className="relative bg-opacity-80  border-2 rounded-full  hover:bg-opacity-70 border-[#ADB7BE] hover:border-yellow-400 group/link"
+          >
+            <div className="px-3 flex flex-row content-center ">
+            <h1 className="my-2 font-bold text-xl relative rounded-full text-[white] group-hover/link:text-yellow-400">WATCH NOW</h1>
+            <PlayIcon className="relative fill-white group-hover/link:fill-yellow-400 h-10 w-10  text-opacity-30   transform translate-x-1 translate-y-0.5  cursor-pointer group-hover/link:text-yellow-400" />
+            </div>
+          </a>
+
+          )}
           
         </div>
         

@@ -53,7 +53,7 @@ const projectsData = [
     image: "/images/projects/5.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/Aksal00/Omi-Warriors",
-    previewUrl: "https://github.com/Aksal00/Omi-Warriors",
+    previewUrl: "",
   },
   
 ];
