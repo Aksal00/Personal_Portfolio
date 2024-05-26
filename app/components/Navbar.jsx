@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className='flex flex-wrap items-center justify-between mx-auto px-5 md:px-14 py-4'>
         <Link href={"/"} className="flex items-center text-xl md:text-3xl text-white font-light">
             <Image 
-                className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' 
+                className='hover:border-2 hover:border-orange-500 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' 
                 src="/logo_icons/icon_A.png" 
                 alt="Portfolio Icon" 
                 width={35} 
@@ -47,7 +47,7 @@ const Navbar = () => {
             <span className='ml-0'>kila&nbsp;</span>
             
             <Image 
-                className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' 
+                className='hover:border-2 hover:border-orange-500 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' 
                 src="/logo_icons/icon_S.png" 
                 alt="Portfolio Icon" 
                 width={35} 
