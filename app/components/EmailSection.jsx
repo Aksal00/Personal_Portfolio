@@ -111,7 +111,7 @@ const EmailSection = () => {
                 id="firstName"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Jacob"
+                placeholder="Enter your first name here"
               />
             </div>
             <div className="mb-6">
@@ -127,7 +127,7 @@ const EmailSection = () => {
                 id="lastName"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Martin"
+                placeholder="Enter your last name here"
               />
             </div>
             <div className="mb-6">
@@ -143,7 +143,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
+                placeholder="Enter your email address here"
               />
             </div>
             <div className="mb-6">
