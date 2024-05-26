@@ -6,6 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer flex flex-col border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
       <div className="container sm:px-4 pt-5 pb-3 flex justify-center">
+      <p className="text-slate-400 justify-center text-center pt-2">Designed by&nbsp;&nbsp;</p>
         <p>
         <Link href={"/"} className="flex items-center text-xl md:text-3xl text-white font-light">
             <Image 
