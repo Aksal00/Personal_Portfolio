@@ -87,6 +87,7 @@ const HeroSection = () => {
                         className = "relative transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         width = {520}
                         height = {600}
+                        priority={true}
                     />
                 </div>
             </div>

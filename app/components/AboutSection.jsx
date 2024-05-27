@@ -180,7 +180,7 @@ const AboutSection = () => {
                 }}
                 >
                 <p className='text-md lg:text-lg text-[#d1d1d1]'>
-                I am a diligent and goal-oriented individual with strong abilities in teamwork and independent thinking. I successfully completed my G.C.E. Ordinary Level and Advanced Level Examinations at Nalanda College, Colombo 10, Sri Lanka. Currently, I am pursuing a B.Sc. (Honours) degree in Computer Science at the University of Sri Jayewardenepura.
+                I am a passionate and highly motivated computer science undergraduate at the University of Sri Jayewardenepura. My primary focus is on full stack development, where I enjoy creating dynamic and responsive web applications. In addition to my expertise in full stack development, I have skills in UI/UX design, mobile application development, game development, video editing, and graphic designing. I thrive on learning new technologies and continuously improving my skill set to create innovative and user-friendly digital solutions.
                 </p></motion.div>
                 <div className='relative flex flex-wrap md:flex-row gap-0 sm:gap-1 md:gap-2 lg:gap-4 xl:gap-4 mt-8  justify-center'>
                     
