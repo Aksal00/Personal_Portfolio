@@ -26,6 +26,7 @@ const SocialmediaCard = ({imgUrl,name,link}) => {
                 alt= {name} 
                 width={72} 
                 height={72}
+                priority={true}
         />):
         (
           <Image 
@@ -34,6 +35,7 @@ const SocialmediaCard = ({imgUrl,name,link}) => {
                 alt= {name} 
                 width={72} 
                 height={72}
+                priority={true}
         />
         )}
       </button>

@@ -163,7 +163,7 @@ const AboutSection = () => {
                 }}
                 >
             <div className='flex mt-20 justify-center'>
-                <Image src="/images/DP2.png"  className="border-5  rounded-full shadow-xl shadow-blur shadow-orange-400" width={450} height={450} alt='about section image'/>
+                <Image src="/images/DP2.png"  className="border-5  rounded-full shadow-xl shadow-blur shadow-orange-400" width={450} height={450} alt='about section image' priority={true}/>
             </div> 
             </motion.div>
             

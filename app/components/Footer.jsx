@@ -14,7 +14,8 @@ const Footer = () => {
                 src="/logo_icons/icon_A.png" 
                 alt="Portfolio Icon" 
                 width={35} 
-                height={35} 
+                height={35}
+                priority={true} 
             />
             <span className='ml-0'>kila&nbsp;</span>
             
@@ -23,7 +24,8 @@ const Footer = () => {
                 src="/logo_icons/icon_S.png" 
                 alt="Portfolio Icon" 
                 width={35} 
-                height={35} 
+                height={35}
+                priority={true} 
             />
             
             <span>rikantha</span>
@@ -36,7 +38,8 @@ const Footer = () => {
                 src="/logo_icons/copyright-symbol.png" 
                 alt="copyright-symbol" 
                 width={23} 
-                height={10} 
+                height={10}
+                priority={true} 
             />
         <p className="text-slate-500">&nbsp;2024</p>
         </div>

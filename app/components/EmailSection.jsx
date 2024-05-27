@@ -73,13 +73,13 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2 mb-10 justify-center md:justify-start">
           <Link href="https://github.com/Aksal00">
-            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/github-icon.png" alt="Github Icon" width={70} height={70}/>
+            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/github-icon.png" alt="Github Icon" width={70} height={70} priority={true}/>
           </Link>
           <Link href="https://www.linkedin.com/in/akila-srikantha-2693b41b9/">
-            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/linkedin-icon.png" alt="Linkedin Icon" width={70} height={70}/>
+            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/linkedin-icon.png" alt="Linkedin Icon" width={70} height={70} priority={true}/>
           </Link>
           <Link href="https://web.facebook.com/profile.php?id=100015022902064">
-            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/facebook-icon.png"alt="Facebook Icon" width={70} height={70}/>
+            <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/facebook-icon.png"alt="Facebook Icon" width={70} height={70} priority={true}/>
           </Link>
         </div>
       </div>
