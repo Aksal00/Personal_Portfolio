@@ -42,7 +42,8 @@ const Navbar = () => {
                 src="/logo_icons/icon_A.png" 
                 alt="Portfolio Icon" 
                 width={35} 
-                height={35} 
+                height={35}
+                priority={true} 
             />
             <span className='ml-0'>kila&nbsp;</span>
             
@@ -51,7 +52,8 @@ const Navbar = () => {
                 src="/logo_icons/icon_S.png" 
                 alt="Portfolio Icon" 
                 width={35} 
-                height={35} 
+                height={35}
+                priority={true} 
             />
             
             <span>rikantha</span>
