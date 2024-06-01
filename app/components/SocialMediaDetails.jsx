@@ -24,6 +24,18 @@ const socialmediaList = [
         image:"/facebook-icon.png",
         link: "https://web.facebook.com/profile.php?id=100015022902064"
     },
+    {
+      id: "3",
+      name:"X",
+      image:"/x-icon.png",
+      link: "https://x.com/akila_salinda"
+    },
+    {
+      id: "4",
+      name:"Youtube",
+      image:"/youtube-icon.png",
+      link: "https://youtube.com/playlist?list=PL_zkjRWwoQj-i8ftGefLnyQJ-uLVxi-ZV&si=HTZ7yvgtF9b2RoK7"
+    },
 ]
 
 const SocialMediaDetails = () => {
@@ -48,7 +60,7 @@ const SocialMediaDetails = () => {
         </h2>
       </div>
       
-      <div className=" sm:border-[#33353F] rounded-xl flex flex-row justify-center md:gap-5  pb-4">
+      <div className=" sm:border-[#33353F] rounded-xl flex flex-row justify-center gap-5  pb-4 place-content-center place-items-center">
           
         
           {socialmediaList.map((socialmedia, index) => {  

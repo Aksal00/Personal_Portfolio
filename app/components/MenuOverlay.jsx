@@ -12,7 +12,7 @@ const MenuOverlay = ({ links }) => {
                     <NavLink href={link.path} title ={link.title}/>
                 </li>
             ))}
-            <div className="socials flex flex-row gap-2 my-7 py-2 px-5 justify-center md:justify-start border-t-2 border-yellow-700 border-b-3">
+            <div className="socials flex flex-row gap-2 my-7 py-2 px-5 justify-center md:justify-start border-t-2 border-yellow-700 border-b-3 place-content-center place-items-center">
                 <Link href="https://github.com/Aksal00">
                     <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/github-icon.png" alt="Github Icon" width={50} height={50} priority={true}/>
                 </Link>
@@ -21,6 +21,12 @@ const MenuOverlay = ({ links }) => {
                 </Link>
                 <Link href="https://web.facebook.com/profile.php?id=100015022902064">
                     <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/facebook-icon.png"alt="Facebook Icon" width={50} height={50} priority={true}/>
+                </Link>
+                <Link href="https://x.com/akila_salinda">
+                    <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/x-icon.png"alt="X Icon" width={50} height={50} priority={true}/>
+                </Link>
+                <Link href="https://youtube.com/playlist?list=PL_zkjRWwoQj-i8ftGefLnyQJ-uLVxi-ZV&si=HTZ7yvgtF9b2RoK7">
+                    <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/youtube-icon.png"alt="Youtube Icon" width={50} height={50} priority={true}/>
                 </Link>
         </div>
         </ul>
