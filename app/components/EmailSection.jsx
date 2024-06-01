@@ -71,7 +71,7 @@ const EmailSection = () => {
           {" "}
           I am always on the lookout for new opportunities and am excited to hear from you. Whether you have a question, a project proposal, or just want to say hello, feel free to reach out. I strive to respond to all inquiries promptly.
         </p>
-        <div className="socials flex flex-row gap-2 mb-10 justify-center md:justify-start place-content-center place-items-center">
+        <div className="socials flex flex-row gap-5 mb-10 justify-center md:justify-start place-content-center place-items-center">
           <Link href="https://github.com/Aksal00">
             <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/github-icon.png" alt="Github Icon" width={70} height={70} priority={true}/>
           </Link>

@@ -12,7 +12,7 @@ const MenuOverlay = ({ links }) => {
                     <NavLink href={link.path} title ={link.title}/>
                 </li>
             ))}
-            <div className="socials flex flex-row gap-2 my-7 py-2 px-5 justify-center md:justify-start border-t-2 border-yellow-700 border-b-3 place-content-center place-items-center">
+            <div className="socials flex flex-row gap-4 my-7 py-2 px-5 justify-center md:justify-start border-t-2 border-yellow-700 border-b-3 place-content-center place-items-center">
                 <Link href="https://github.com/Aksal00">
                     <Image className='hover:border-2 hover:rounded-full hover:shadow-lg hover:shadow-blur hover:shadow-orange-400' src="/github-icon.png" alt="Github Icon" width={50} height={50} priority={true}/>
                 </Link>
