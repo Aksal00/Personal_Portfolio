@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
 import SkillsSection from "./components/SkillsSection";
 import SocialMediaDetails from "./components/SocialMediaDetails";
+import ClientFeedbackSection from "./components/ClientFeedbackSection";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         <SkillsSection/>
         <ProjectsSection/>
         <AchievementsSection />
+        <ClientFeedbackSection/>
         <EmailSection/>
         
         <Footer/>

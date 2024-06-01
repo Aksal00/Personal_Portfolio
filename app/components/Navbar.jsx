@@ -24,6 +24,10 @@ const NavLinks = [
         path: "#projects"
     },
     {
+        title:"Client Reviews",
+        path: "#client_reviews"
+    },
+    {
         title: "Contact",
         path: "#contact",
     },

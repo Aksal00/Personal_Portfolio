@@ -49,7 +49,7 @@ const EmailSection = () => {
     
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-8 sm:gap-20 lg:gap-60 relative"
+      className="grid md:grid-cols-2 my-5 md:my-12 py-24 gap-8 sm:gap-20 lg:gap-60 relative"
     >
       
       <motion.div

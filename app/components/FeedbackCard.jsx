@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 
-const SkillCard = ({ skillName,imgUrl}) => {
+const FeedbackCard = ({feedback,imgUrl}) => {
   return (
     <div>
       <motion.div
@@ -16,19 +16,19 @@ const SkillCard = ({ skillName,imgUrl}) => {
             hidden: { opacity: 0, scale: 0.3 }
           }}
         >
-      <div className="grid place-items-center">
+      <div className="grid place-items-center relative bg-white w-full h-auto md:h-[200px] lg:h-[300px] xl:h-[300px] shadow-lg shadow-blur shadow-orange-400">
         <Image 
             src={imgUrl}
-            className = "  py-3"
-            alt={skillName} 
-            width= {82}
-            height={82}
+            className = "relative w-full h-auto"
+            alt={feedback} 
+            width= {400}
+            height={300}
         />
-        <h5 className=" mt-2 text-md lg:text-xl font-semibold mb-2 text-center text-white">{skillName}</h5>
+        
     </div>
     </motion.div>
     </div>
   );
 };
 
-export default SkillCard;
+export default FeedbackCard;
