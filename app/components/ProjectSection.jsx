@@ -37,7 +37,7 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "WeeCare - Women Children Safety App",
+    title: "WeeCare - Women and Children Safety App",
     description: "WeeCare is a React Native mobile application prioritizing the safety of women and children. This app empowers users with essential features for their well-being in emergencies.",
     technology_stack:"React Native, Expo",
     image: "/images/projects/4.png",
