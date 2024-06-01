@@ -64,7 +64,7 @@ const FeedbackList = [
 const ClientFeedbackSection = () => {
   return (
     <section id="client_reviews" className="py-5">
-            <div className="py-8 px-4 xl:gap-16 sm:py-10 xl:px-16"> 
+            <div className="py-8 sm:px-4 xl:gap-16 sm:py-10 xl:px-16"> 
                 <h2 className="text-center text-4xl font-bold  mt-4 mb-4 md:mb-4 text-transparent text-white">
                     Reviews from Clients
                 </h2>   
