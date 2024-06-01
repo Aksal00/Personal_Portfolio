@@ -12,7 +12,7 @@ const AnimatedNumbers = dynamic(
 
 const achievementsList = [
   {
-    metric: "Freelance Projects in Video Editing",
+    metric: "Freelance Projects",
     value: "60",
     postfix: "+",
   },
@@ -51,7 +51,7 @@ const AchievementsSection = () => {
         
       <div className="shadow-md shadow-blur shadow-orange-400 sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col md:flex-row items-center justify-between">
       <h2 className="text-center text-3xl md:text-4xl font-bold  mt-4 mb-4 md:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-500 to-yellow-600">
-        As a Freelance Video Editor
+        As a Freelancer
       </h2>
         {achievementsList.map((achievement, index) => {
           return (
