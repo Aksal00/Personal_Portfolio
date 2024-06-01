@@ -16,10 +16,10 @@ const FeedbackCard = ({feedback,imgUrl}) => {
             hidden: { opacity: 0, scale: 0.3 }
           }}
         >
-      <div className="grid place-items-center relative bg-white w-full h-auto md:h-[200px] lg:h-[300px] xl:h-[300px] shadow-lg shadow-blur shadow-orange-400">
+      <div className="grid place-items-center sm:border-4 border-orange-400 rounded-xl relative bg-white  bg-cover w-full h-auto md:h-[200px] lg:h-[300px] xl:h-[300px] shadow-lg shadow-blur shadow-orange-400">
         <Image 
             src={imgUrl}
-            className = "relative w-full h-auto"
+            className = "relative w-full h-auto border-4 border-orange-400 sm:border-none"
             alt={feedback} 
             width= {400}
             height={300}
