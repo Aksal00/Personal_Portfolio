@@ -60,7 +60,7 @@ const SocialMediaDetails = () => {
         </h2>
       </div>
       
-      <div className=" sm:border-[#33353F] rounded-xl flex flex-row justify-center gap-5  pb-4 place-content-center place-items-center">
+      <div className=" sm:border-[#33353F] rounded-xl flex flex-row justify-center gap-2 sm:gap-5  pb-4 place-content-center place-items-center">
           
         
           {socialmediaList.map((socialmedia, index) => {  
