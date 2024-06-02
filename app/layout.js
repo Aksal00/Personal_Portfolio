@@ -12,7 +12,7 @@ export const metadata = {
   icons: [
     {
       rel: 'icon',
-      type: 'image/png',
+      formats: 'image/png',
       sizes: '192x192',
       url: icon,
     },
