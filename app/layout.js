@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import Image from 'next/image';
+import appleIcon from './apple-icon.png';
+import icon from './icon.png';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,12 +14,12 @@ export const metadata = {
       rel: 'icon',
       type: 'image/png',
       sizes: '192x192',
-      url: '/icon.png',
+      url: icon,
     },
     {
       rel: 'apple-touch-icon',
       sizes: '180x180',
-      url: '/apple-icon.png',
+      url: appleIcon,
     },
   ]
 };
