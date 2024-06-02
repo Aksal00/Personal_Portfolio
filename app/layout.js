@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Image from 'next/image';
-import appleIcon from './apple-icon.png';
+import appleIcon from './apple-touch-icon.png';
 import icon from './icon.png';
 
 const inter = Inter({ subsets: ["latin"] });
