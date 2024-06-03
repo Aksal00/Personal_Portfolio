@@ -9,20 +9,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Akila Srikantha",
   description: "Personal Portfolio",
-  icons: [
-    {
-      rel: 'icon',
-      formats: ['image/png'],
-      sizes: '192x192',
-      url: icon,
-    },
-    {
-      rel: 'apple-touch-icon',
-      formats: ['image/png'],
-      sizes: '180x180',
-      url: appleIcon,
-    },
-  ]
 };
 
 export default function RootLayout({ children }) {
