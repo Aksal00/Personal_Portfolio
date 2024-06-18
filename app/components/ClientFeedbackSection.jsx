@@ -59,6 +59,11 @@ const FeedbackList = [
         feedback:"feedback 10",
         image: "/images/reviews/10.png"
     },
+    {
+        id: "11",
+        feedback:"feedback 11",
+        image: "/images/reviews/11.png"
+    },
 ];
 
 const ClientFeedbackSection = () => {
