@@ -53,9 +53,9 @@ const SocialMediaDetails = () => {
               
                 className="col-span-4 place-self-center mt-4 lg:mt-0"
       >
-      <div className=" md:border rounded-full md:rounded-full border-opacity-50">
+      <div className="md:shadow-sm md:shadow-blur md:shadow-orange-400 md:border-[#5c5d64] rounded-full md:rounded-full border-opacity-50">
       <div>
-        <h2 className="text-center text-4xl font-bold  mt-4 mb-4 md:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-500 to-yellow-600 justify-center">
+        <h2 className="text-center text-4xl font-bold  mt-4 mb-4 md:mb-4 md:pt-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-500 to-yellow-600 justify-center">
           Let&apos;s Connect
         </h2>
       </div>

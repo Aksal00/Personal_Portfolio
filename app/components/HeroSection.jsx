@@ -26,6 +26,8 @@ const HeroSection = () => {
                 <span className='text-white mb-6 text-xl md:text-2xl lg:text-4xl font-bold'>
                 <TypeAnimation
                     sequence={[
+                        ' Computer Science Undergraduate.',
+                        1000,
                         ' Tech Geek.',
                         1000,
                         ' Web Developer.',
