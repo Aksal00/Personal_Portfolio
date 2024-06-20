@@ -79,26 +79,36 @@ const skillList = [
     },
     {
         id: "14",
+        skillName:"Express.js",
+        image:"/images/skills/expressjs.png"
+    },
+    {
+        id: "15",
+        skillName:"Tailwind CSS",
+        image:"/images/skills/tailwind.png"
+    },
+    {
+        id: "16",
         skillName:"Unity",
         image:"/images/skills/unity.png"
     },
     {
-        id: "15",
+        id: "17",
         skillName:"Figma",
         image:"/images/skills/figma.png"
     },
     {
-        id: "16",
+        id: "18",
         skillName:"Photoshop",
         image:"/images/skills/ps.png"
     },
     {
-        id: "17",
+        id: "19",
         skillName:"Premiere Pro",
         image:"/images/skills/pr.png"
     },
     {
-        id: "18",
+        id: "20",
         skillName:"After Effects",
         image:"/images/skills/ae.png"
     },
