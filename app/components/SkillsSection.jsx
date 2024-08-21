@@ -89,26 +89,31 @@ const skillList = [
     },
     {
         id: "16",
+        skillName:"Arduino",
+        image:"/images/skills/arduino.png"
+    },
+    {
+        id: "17",
         skillName:"Unity",
         image:"/images/skills/unity.png"
     },
     {
-        id: "17",
+        id: "18",
         skillName:"Figma",
         image:"/images/skills/figma.png"
     },
     {
-        id: "18",
+        id: "19",
         skillName:"Photoshop",
         image:"/images/skills/ps.png"
     },
     {
-        id: "19",
+        id: "20",
         skillName:"Premiere Pro",
         image:"/images/skills/pr.png"
     },
     {
-        id: "20",
+        id: "21",
         skillName:"After Effects",
         image:"/images/skills/ae.png"
     },
