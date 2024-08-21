@@ -7,6 +7,16 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "SENSEI - Interactive Learning Assistant Robot",
+    description: "Sensei is a learning assistant robot that can answer any kind of general questions and interact with the real-time environment. Sensei has the ability to see and identify objects, people and  show reactions to them, and move with obstacle detection capabilities.",
+    technology_stack:"Arduino, Python, OpenCV, Gemini API, Raspberry Pi, ESP32 (Microcontrollers), Thinkercad (3D Design) ",
+    image: "/images/projects/6.png",
+    tag: ["All", "Robotics"],
+    gitUrl: "",
+    previewUrl: "",
+  },
+  {
+    id: 1,
     title: "Portfolio Website",
     description: "This is the project you are currently watching",
     technology_stack:"NextJs, Framer Motion, Tailwind CSS",
@@ -101,6 +111,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="PC"
           isSelected={tag === "PC"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Robotics"
+          isSelected={tag === "Robotics"}
         />
       </div>
       <ul ref={ref} className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12">
