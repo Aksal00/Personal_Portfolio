@@ -12,8 +12,8 @@ const projectsData = [
     technology_stack:"Arduino, Python, OpenCV, Gemini API, Raspberry Pi, ESP32 (Microcontrollers), Thinkercad (3D Design) ",
     image: "/images/projects/6.png",
     tag: ["All", "Robotics"],
-    gitUrl: "",
-    previewUrl: "",
+    gitUrl: "https://github.com/Aksal00/Senesi---Learning-Assistant-Robot",
+    previewUrl: "https://youtu.be/gezWVwxCvCU",
   },
   {
     id: 1,
