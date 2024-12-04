@@ -1,9 +1,6 @@
 "use client";
 import React from 'react'
 import SkillCard from './SkillCard';
-import Image from "next/image"
-import { TypeAnimation } from 'react-type-animation';
-import { motion,easeIn } from "framer-motion";
 
 const skillList = [
     {
