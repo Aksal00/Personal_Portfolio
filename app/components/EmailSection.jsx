@@ -17,9 +17,12 @@ const EmailSection = () => {
           e.preventDefault();
       
           emailjs
-            .sendForm("service_wfu77m6", "template_lakqdcp", form.current, {
-              publicKey: "kow9aIOae0Ug-IEoJ",
-            })
+          .sendForm(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            form.current,
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+          )
             .then(
               () => {Swal.fire({
                 position: "center",
