@@ -76,8 +76,8 @@ const skillList = [
     },
     {
         id: "14",
-        skillName:"Express.js",
-        image:"/images/skills/expressjs.png"
+        skillName:".NET",
+        image:"/images/skills/dotnet.png"
     },
     {
         id: "15",

@@ -65,6 +65,16 @@ const projectsData = [
     gitUrl: "https://github.com/Aksal00/Omi-Warriors",
     previewUrl: "",
   },
+  {
+    id: 6,
+    title: "CricVision - Mobile Application (Final Year Research Project)",
+    description: "Stroke Vision is a cricket stroke recognition mobile application that utilizes computer vision techniques to identify and classify different cricket strokes in real time using the device's camera or a user-provided video. After analysis, the application provides feedback and suggestions to help improve the player's performance.",
+    technology_stack:"React Native, Expo, Python, Flask, MediaPipe, TensorFlow, OpenCV",
+    image: "/images/projects/7.Jpg",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/Aksal00/Stroke-Vision---Frontend",
+    previewUrl: "https://youtube.com/shorts/wDct0i17r6Y?feature=share",
+  }
   
 ];
 

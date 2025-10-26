@@ -29,7 +29,7 @@ const TAB_DATA = [
                 <br></br>
                 <li className='text-nowrap'><b>University of Sri Jayewardenepura</b></li>
                 <ul>
-                    <li className='pl-2'>B.Sc. (Honours) in Computer Science(2021- Present)</li>
+                    <li className='pl-2'>B.Sc. (Honours) in Computer Science</li>
                 </ul>
 
             </ul>
@@ -52,6 +52,8 @@ const TAB_DATA = [
                             hidden: {y:-40,opacity: 0, scale: 1 }
                         }}>
             <ul className=' list-disc'>
+                <li><b>Software Engineer (Internship) - Wiley Global Technology</b></li>
+                <br></br>
                 <li><b>Director of Public Relations Committee- Rotaract Club of University of Sri Jayewardenepura( RI Year 22-23 )</b></li>
                 <br></br>
                 <li><b>Committee Member - Computer Science Association University of Sri jayewardenepura</b></li>
@@ -129,6 +131,8 @@ const TAB_DATA = [
                     <Image src="/images/extra/1.jpg"  className=" border border-orange-500 " width={250} height={350} alt='extra 1'/>
                     
                     <Image src="/images/extra/2.jpg"  className=" border border-orange-500 " width={250} height={350} alt='extra 2'/>
+                    
+                    <Image src="/images/extra/3.jpg"  className=" border border-orange-500 " width={250} height={350} alt='extra 3'/>
             </motion.div>
             </div>
             
