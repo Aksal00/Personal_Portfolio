@@ -131,7 +131,7 @@ const TAB_DATA = [
                     <Image src="/images/extra/1.jpg"  className=" border border-orange-500 " width={250} height={350} alt='extra 1'/>
                     
                     <Image src="/images/extra/2.jpg"  className=" border border-orange-500 " width={250} height={350} alt='extra 2'/>
-                    
+
                     <Image src="/images/extra/3.jpg"  className=" border border-orange-500 " width={250} height={350} alt='extra 3'/>
             </motion.div>
             </div>
@@ -184,7 +184,9 @@ const AboutSection = () => {
                 }}
                 >
                 <p className='text-md lg:text-lg text-[#d1d1d1]'>
-                I am a passionate and highly motivated computer science undergraduate at the University of Sri Jayewardenepura. My primary focus is on full stack development, where I enjoy creating dynamic and responsive web applications. In addition to my expertise in full stack development, I have skills in UI/UX design, mobile application development, game development, video editing, and graphic designing. I thrive on learning new technologies and continuously improving my skill set to create innovative and user-friendly digital solutions.
+                With a strong focus on full-stack development (React, .NET), I am dedicated to delivering impactful solutions that enhance user experiences and drive innovation.
+I earned my BSc (Honours) in Computer Science from the University of Sri Jayewardenepura, where I developed a solid foundation in software engineering, modern development frameworks, and problem-solving through hands-on projects and research.
+In addition to full-stack development, I bring versatile skills in UI/UX design (Figma), mobile application development (React Native), game development (Unity Game Engine), video editing, and graphic design. I possess strong problem-solving abilities, thrive in team environments, and am committed to continuous self-learning. My adaptability allows me to quickly adjust to new challenges and technologies, ensuring that I contribute effectively to diverse projects.
                 </p></motion.div>
                 <div className='relative flex flex-wrap md:flex-row gap-0 sm:gap-1 md:gap-2 lg:gap-4 xl:gap-4 mt-8  justify-center'>
                     
