@@ -23,10 +23,10 @@ const NavLinks = [
         title:"Projects",
         path: "#projects"
     },
-    {
-        title:"Client Reviews",
-        path: "#client_reviews"
-    },
+    // {
+    //     title:"Client Reviews",
+    //     path: "#client_reviews"
+    // },
     {
         title: "Contact",
         path: "#contact",

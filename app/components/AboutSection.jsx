@@ -53,12 +53,39 @@ const TAB_DATA = [
                         }}>
             <ul className=' list-disc'>
                 <li><b>Software Engineer (Internship) - Wiley Global Technology</b></li>
+                <ul className='pt-2'>
+                    <li className='pl-2 text-sm'>February 2025 – February 2026</li>
+                    <li className='pl-2 pt-3'>
+                        <b>Web Application Development:</b>
+                        <ul className='list-disc pl-6 pt-1'>
+                            <li>Contributed to the development and improvement of internal web applications</li>
+                            <li>Worked on Essential Evidence Plus (EEP) Admin Portal, EEP Client Application, and Wiley Online Library (WOL) Pricing Tool</li>
+                            <li>Implemented new features and resolved issues in WOL Lite Application</li>
+                        </ul>
+                    </li>
+                    <li className='pl-2 pt-2'>
+                        <b>System Optimization:</b>
+                        <ul className='list-disc pl-6 pt-1'>
+                            <li>Identified and fixed bugs to enhance overall system functionality</li>
+                            <li>Optimized workflows and improved user experience</li>
+                        </ul>
+                    </li>
+                    <li className='pl-2 pt-2'>
+                        <b>Process Automation:</b>
+                        <ul className='list-disc pl-6 pt-1'>
+                            <li>Developed the EEP Topic Upload Tool as part of an innovative initiative</li>
+                            <li>Automated recurring BAU tasks (monthly topic and Teton uploads)</li>
+                            <li>Significantly improved process efficiency</li>
+                        </ul>
+                    </li>
+                    <li className='pl-2 pt-3'><b>Technical Skills:</b> .NET, React, Python, NUnit (Unit Testing), Microsoft SQL Server, AWS</li>
+                </ul>
                 <br></br>
-                <li><b>Director of Public Relations Committee- Rotaract Club of University of Sri Jayewardenepura( RI Year 22-23 )</b></li>
+                {/* <li><b>Director of Public Relations Committee- Rotaract Club of University of Sri Jayewardenepura( RI Year 22-23 )</b></li>
                 <br></br>
                 <li><b>Committee Member - Computer Science Association University of Sri jayewardenepura</b></li>
                 <br></br>
-                <li><b>Freelance Video Editor & Graphic Designer at Fiverr(2019 - Present)</b></li>
+                <li><b>Freelance Video Editor & Graphic Designer at Fiverr(2019 - Present)</b></li>  */}
             </ul>
             </motion.div>
             </div>
@@ -85,7 +112,7 @@ const TAB_DATA = [
                         }}>
                 
                 <ul className=' list-disc'>
-                    <li ><b>Rotaract Club of University of Sri Jayewardenepura</b></li>
+                    <li ><b>Director of Public Relations Committee - Rotaract Club of University of Sri Jayewardenepura ( RI Year 22-23 )</b></li>
                     <ul className='pt-3'>
                         <li className='pl-2'><b>Project</b> - Design Warrior 3.0</li>
                         <li className='pl-2 pb-1'><b>Position</b> - Chairperson</li>
@@ -106,7 +133,7 @@ const TAB_DATA = [
                     In the Rotary International year 2022-2023, I was appointed as the <b>Director of the Public Relations Committee</b> of the Rotaract Club of the University of Sri Jayewardenepura. During that year, two projects were carried out under our committee, and Project &quot;Someone&apos;s Daughter Vol-05&quot; won the <b>bronze award for the most outstanding public image initiative</b> of 2022-23 in Rotaract District 3230 (Sri Lanka - Maldives). 
                     </p>
                     <br></br>
-                    <li><b>Computer Science Association University of Sri jayewardenepura</b></li>
+                    <li><b>Committee Member - Computer Science Association University of Sri jayewardenepura</b></li>
                     <ul className='pt-3'>
                         <li className='pl-2'><b>Project</b> - CSA Project Pulse</li>
                         <li className='pl-2 pb-1'><b>Position</b> - Chairperson</li>

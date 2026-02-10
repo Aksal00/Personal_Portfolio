@@ -21,8 +21,8 @@ export default function Home() {
         <AboutSection/>
         <SkillsSection/>
         <ProjectsSection/>
-        <AchievementsSection />
-        <ClientFeedbackSection/>
+        {/* <AchievementsSection /> */}
+        {/* <ClientFeedbackSection/> */}
         <EmailSection/>
         
         <Footer/>
