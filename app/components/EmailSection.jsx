@@ -203,7 +203,7 @@ const EmailSection = () => {
                 placeholder="Let's talk about..."
               />
             </div>
-            <div class="group relative mt-5">
+            <div className="group relative mt-5">
             
             
               <button

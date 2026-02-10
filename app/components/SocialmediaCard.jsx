@@ -23,7 +23,7 @@ const SocialmediaCard = ({imgUrl,name,link}) => {
         <Image 
                 src={imgUrl}
                 className ="border-4 rounded-full shadow-lg shadow-blur shadow-orange-400"
-                alt= {name} 
+                alt= {name?.name || "Social Media Icon"} 
                 width={72} 
                 height={72}
                 priority={true}
@@ -32,7 +32,7 @@ const SocialmediaCard = ({imgUrl,name,link}) => {
           <Image 
                 src={imgUrl}
                 className =""
-                alt= {name} 
+                alt= {name?.name || "Social Media Icon"} 
                 width={72} 
                 height={72}
                 priority={true}

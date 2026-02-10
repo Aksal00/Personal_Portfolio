@@ -51,14 +51,14 @@ const HeroSection = () => {
                 </p>
                 <div >
                     
-                    <span class="group relative">
+                    <span className="group relative">
                             
                         <Link href="#contact">
                             <button  className ='hover:shadow-lg hover:shadow-blur hover:shadow-orange-500 relative px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-orange-600 hover:bg-yellow-500 text-white hover:text-black'>Contact Me</button>
                         </Link>
                             
                     </span>
-                    <span class="group relative">
+                    <span className="group relative">
                         <button  className ='hover:shadow-lg hover:shadow-blur hover:shadow-orange-500 relative  px-1 py-1 w-full sm:w-fit rounded-full bg-orange-600 hover:bg-yellow-500 border-white mt-3'>
                             <a href="/cv/Akila_Srikantha_CV.pdf" download="Akila_Srikantha_CV">
                             <span className="block text-white hover:text-yellow-300 bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 ">Download CV</span>
